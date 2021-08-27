@@ -15,7 +15,7 @@
     width: 100%;
     letter-spacing: 5px;
     font-family: 'Gaegu';
-    font-size: 5em;
+    font-size: 500%;
 }
 
 .home .selection-container {
@@ -24,68 +24,44 @@
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    max-width: 1000px;
+    max-width: 1500px;
     height: fit-content;
     margin: 0 auto;
+    font-size: 150%;
 
     font-family: 'Gaegu';
 }
 
+.home .selection-component {
+    min-width: 75px;
+}
+
 .home .selection-container img {
-    width: 200px;
+    width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
-    .home .selection-container img {
-        width: 150px;
-    }
-
     .home .selection-container {
         width: 60%;
     }
 }
 
-@media screen and (max-width: 800px) {
-    .home .selection-container img {
-        width: 100px;
-    }
-
+@media screen and (max-width: 1000px) {
     .home .selection-container {
-        font-size: .7em;
-        width: 60%;
-    }
-
-    .home .header {
-        font-size: 4.2em;
+        width: 70%;
+        font-size: 100%;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .home .selection-container img {
-        width: 80px;
-    }
+
+@media screen and (max-width: 500px) {
 
     .home .selection-container {
-        font-size: .6em;
-        width: 60%;
-    }
-
-    .home .header {
-        font-size: 4em;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .home .selection-container img {
-        width: 60px;
-    }
-
-    .home .selection-container {
-        font-size: .5em;
         width: 80%;
+        font-size: 60%;
     }
 
     .home .header {
-        font-size: 4em;
+        /* font-size: 4em; */
     }
 }
