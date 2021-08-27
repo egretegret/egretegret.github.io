@@ -33,3 +33,17 @@
 .home .selection-container img {
     width: 200px;
 }
+
+@media screen and (min-width: 400px) {
+    .home .selection-container img {
+        width: 60px;
+    }
+
+    .home .selection-container {
+        font-size: .5em;
+    }
+
+    .home .header {
+        font-size: 4em;
+    }
+}
