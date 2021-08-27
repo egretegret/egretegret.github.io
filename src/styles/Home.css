@@ -8,6 +8,7 @@
     align-content: center;
     justify-content: center;
     overflow: hidden;
+    text-align: center;
 }
 
 .home .header {
