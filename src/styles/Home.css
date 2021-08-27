@@ -1,0 +1,35 @@
+.home {
+    background-color: #EDD4B4;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home .header {
+    height: fit-content;
+    width: 100%;
+    letter-spacing: 5px;
+    font-family: 'Gaegu';
+    font-size: 5em;
+}
+
+.home .selection-container {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: fit-content;
+    margin: 0 auto;
+
+    font-family: 'Gaegu';
+}
+
+.home .selection-container img {
+    width: 200px;
+}
