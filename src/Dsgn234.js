@@ -7,7 +7,7 @@ import {
     useParams,
     useRouteMatch
 } from "react-router-dom";
-import HoverActivity from "./dsgn234/HoverActivity";
+import HoverActivity from "./dsgn234/exercises/HoverActivity";
 
 function Dsgn234() {
     let { path, url } = useRouteMatch();

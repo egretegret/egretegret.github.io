@@ -112,6 +112,10 @@ class HoverActivity extends React.Component {
                         </div>
                     </div>
                 </button>
+                <div class="credit">
+                    Original Reference: Takane Ichinose <br/>
+                    <span class="detail">house hover animation made with html + css</span>
+                </div>
             </div>
 
         );

@@ -12,7 +12,7 @@
    overflow: hidden;
 }
 
- .btn-challenge {
+.hoveractivity .btn-challenge {
 	 color: #ffefe0;
 	 font-family: inherit;
 	 font-size: inherit;
@@ -34,18 +34,18 @@
 	 position: relative;
 	 transition: background-color 180ms ease-out;
 }
- .btn-challenge > small {
+.hoveractivity .btn-challenge > small {
 	 color: #ffefe0;
 	 font-size: 0.6em;
 	 font-weight: normal;
 }
- .btn-challenge:hover {
+.hoveractivity .btn-challenge:hover {
 	 background-color: #cfa682;
 }
- .btn-challenge:active, .btn-challenge:hover:active {
+.hoveractivity .btn-challenge:active, .btn-challenge:hover:active {
 	 background-color: #cfa682;
 }
- .hover-area {
+.hoveractivity .hover-area {
 	 width: 195px;
 	 height: 75px;
 	 display: grid;
@@ -56,7 +56,7 @@
 	 left: 0;
 	 perspective: 500px;
 }
- .hover-area .hover-col {
+ .hoveractivity .hover-area .hover-col {
 	 z-index: 1;
 }
  .hover-area .hover-col:nth-child(1):hover ~ .icon-home {
@@ -319,7 +319,7 @@
 	 transform: scale(1) rotateX(-45deg) rotateY(90deg);
 	 transition: transform 380ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
- .hover-area .icon-home {
+.hoveractivity .hover-area .icon-home {
 	 width: 80px;
 	 height: 80px;
 	 position: absolute;
@@ -330,7 +330,7 @@
 	 transform: scale(0);
 	 transition: transform 225ms ease-out;
 }
- .hover-area .icon-home .roof {
+.hoveractivity .hover-area .icon-home .roof {
 	 height: 90px;
 	 position: absolute;
 	 left: 50%;
@@ -338,13 +338,13 @@
 	 transform-style: preserve-3d;
 	 transform: translateZ(45px) rotateX(90deg);
 }
- .hover-area .icon-home .roof.roof.roof-1 {
+.hoveractivity .hover-area .icon-home .roof.roof.roof-1 {
 	 top: -90px;
 }
- .hover-area .icon-home .roof.roof.roof-2 {
+.hoveractivity .hover-area .icon-home .roof.roof.roof-2 {
 	 top: -110px;
 }
- .hover-area .icon-home .roof:before, .hover-area .icon-home .roof:after {
+.hoveractivity .hover-area .icon-home .roof:before, .hover-area .icon-home .roof:after {
 	 content: '';
 	 background-color: #cfa682;
 	 width: 70px;
@@ -353,32 +353,32 @@
 	 top: 0;
 	 transform-style: preserve-3d;
 }
- .hover-area .icon-home .roof:before {
+.hoveractivity .hover-area .icon-home .roof:before {
 	 right: 0;
 	 transform-origin: bottom right;
 	 transform: rotateY(-37.5deg);
 	 filter: brightness(105%);
 }
- .hover-area .icon-home .roof:after {
+.hoveractivity .hover-area .icon-home .roof:after {
 	 left: 0;
 	 transform-origin: bottom left;
 	 transform: rotateY(37.5deg);
 	 filter: brightness(95%);
 }
- .hover-area .icon-home .roof-design {
+.hoveractivity .hover-area .icon-home .roof-design {
 	 height: 20px;
 	 position: absolute;
 	 top: -20px;
 	 left: 50%;
 	 transform-style: preserve-3d;
 }
- .hover-area .icon-home .roof-design.roof-design-1 {
+.hoveractivity .hover-area .icon-home .roof-design.roof-design-1 {
 	 transform: translateZ(45px);
 }
- .hover-area .icon-home .roof-design.roof-design-2 {
+.hoveractivity .hover-area .icon-home .roof-design.roof-design-2 {
 	 transform: translateZ(-45px);
 }
- .hover-area .icon-home .roof-design:before, .hover-area .icon-home .roof-design:after {
+.hoveractivity .hover-area .icon-home .roof-design:before, .hover-area .icon-home .roof-design:after {
 	 content: '';
 	 background-color: #cfa682;
 	 width: 55px;
@@ -387,17 +387,17 @@
 	 top: 0;
 	 transform-style: preserve-3d;
 }
- .hover-area .icon-home .roof-design:before {
+.hoveractivity .hover-area .icon-home .roof-design:before {
 	 right: 0;
 	 transform-origin: bottom right;
 	 transform: skewY(-37.5deg);
 }
- .hover-area .icon-home .roof-design:after {
+.hoveractivity .hover-area .icon-home .roof-design:after {
 	 left: 0;
 	 transform-origin: bottom left;
 	 transform: skewY(37.5deg);
 }
- .hover-area .icon-home .roof-side {
+.hoveractivity .hover-area .icon-home .roof-side {
 	 background-color: #cfa682;
 	 width: 90px;
 	 height: 20px;
@@ -407,15 +407,15 @@
 	 transform-style: preserve-3d;
 	 transform: translateZ(45px) rotateY(90deg);
 }
- .hover-area .icon-home .roof-side.roof-side-1 {
+.hoveractivity .hover-area .icon-home .roof-side.roof-side-1 {
 	 left: -15px;
 	 filter: brightness(105%);
 }
- .hover-area .icon-home .roof-side.roof-side-2 {
+.hoveractivity .hover-area .icon-home .roof-side.roof-side-2 {
 	 right: -105px;
 	 filter: brightness(95%);
 }
- .hover-area .icon-home .roof-wall {
+.hoveractivity .hover-area .icon-home .roof-wall {
 	 border-top: none;
 	 border-bottom: solid 31px #ebbb8e;
 	 border-left: solid 40px transparent;
@@ -425,13 +425,13 @@
 	 left: 0;
 	 transform-style: preserve-3d;
 }
- .hover-area .icon-home .roof-wall.roof-wall-1 {
+.hoveractivity .hover-area .icon-home .roof-wall.roof-wall-1 {
 	 transform: translateZ(40px);
 }
- .hover-area .icon-home .roof-wall.roof-wall-2 {
+.hoveractivity .hover-area .icon-home .roof-wall.roof-wall-2 {
 	 transform: translateZ(-40px);
 }
- .hover-area .icon-home .wall {
+.hoveractivity .hover-area .icon-home .wall {
 	 background-color: #ebbb8e;
 	 width: 81px;
 	 height: 50px;
@@ -441,22 +441,22 @@
 	 transform-origin: center;
 	 transform-style: preserve-3d;
 }
- .hover-area .icon-home .wall.wall-1 {
+.hoveractivity .hover-area .icon-home .wall.wall-1 {
 	 transform: translateZ(40px);
 }
- .hover-area .icon-home .wall.wall-2 {
+.hoveractivity .hover-area .icon-home .wall.wall-2 {
 	 transform: translateZ(-40px);
 	 filter: brightness(90%);
 }
- .hover-area .icon-home .wall.wall-3 {
+.hoveractivity .hover-area .icon-home .wall.wall-3 {
 	 transform: rotateY(90deg) translateZ(-40px);
 	 filter: brightness(105%);
 }
- .hover-area .icon-home .wall.wall-4 {
+.hoveractivity .hover-area .icon-home .wall.wall-4 {
 	 transform: rotateY(90deg) translateZ(40px);
 	 filter: brightness(95%);
 }
- .hover-area .icon-home .door {
+.hoveractivity .hover-area .icon-home .door {
 	 background-color: #c08c6e;
 	 width: 30px;
 	 height: 40px;
@@ -466,7 +466,7 @@
 	 transform-style: preserve-3d;
 	 transform: translateZ(40px);
 }
- .hover-area .icon-home .floor {
+.hoveractivity .hover-area .icon-home .floor {
 	 background-color: #caa18a;
 	 width: 81px;
 	 height: 81px;
@@ -477,5 +477,17 @@
 	 transform-style: preserve-3d;
 	 transform: rotateX(90deg) translateZ(-40px) scale(1.01);
 	 filter: brightness(90%);
+}
+
+.hoveractivity .credit {
+	color: #cfa682;
+	position: absolute;
+	bottom: 10%;
+	font-size: 80%;
+	text-align: center;
+}
+
+.hoveractivity .credit .detail {
+	font-size: 60%;
 }
  

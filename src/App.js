@@ -4,7 +4,7 @@ import About from './About';
 import Home from './Home';
 import Design from './Design'
 import Dsgn234 from './Dsgn234'
-import HoverActivity from './dsgn234/HoverActivity'
+import HoverActivity from './dsgn234/exercises/HoverActivity'
 import './styles/App.css';
 
 class App extends React.Component {
