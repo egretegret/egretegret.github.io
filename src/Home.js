@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './styles/Home.css';
 
 class Home extends React.Component {
@@ -16,18 +17,18 @@ class Home extends React.Component {
                             onMouseOut={e => (e.currentTarget.src = "./egg1.png")}></img>
                         <h2>programming</h2>
                     </div>
-                    <div className="selection-component">
+                    <Link to="/about"><div className="selection-component">
                         <img className="egg2" src="./egg2.png" alt="animated egg gif"
                             onMouseOver={e => (e.currentTarget.src = "./egg.gif")}
                             onMouseOut={e => (e.currentTarget.src = "./egg2.png")}></img>
                         <h2>about</h2>
-                    </div>
-                    <div className="selection-component">
+                    </div></Link>
+                    <Link to="/design"><div className="selection-component">
                         <img className="egg3" src="./egg3.png" alt="animated egg gif"
                             onMouseOver={e => (e.currentTarget.src = "./egg.gif")}
                             onMouseOut={e => (e.currentTarget.src = "./egg3.png")}></img>
                         <h2>design</h2>
-                    </div>
+                    </div></Link>
                 </div>
             </div>
 
