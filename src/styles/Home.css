@@ -19,6 +19,14 @@
     font-size: 500%;
 }
 
+.home h2 {
+    color: black;
+}
+
+.home a {
+    text-decoration: none;
+}
+
 .home .selection-container {
     display: flex;
     align-content: center;

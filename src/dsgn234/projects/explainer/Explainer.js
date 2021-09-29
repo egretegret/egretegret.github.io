@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -7,31 +7,43 @@ import {
     useParams,
     useRouteMatch
 } from "react-router-dom";
-import Dsgn234 from './Dsgn234';
+import "./explainer.css";
+import background from "./paper.png";
 
 function Explainer() {
-    let { path, url } = useRouteMatch();
 
-        return (
-            <div>
-                <Switch>
-                <Route exact path={path}>
-                <h2>Design Page</h2>
-                    <p>This section contains information about design</p>
-                    <h3>make a selection</h3>
-                    <ul>
-                        <li>
-                            <Link to={`${url}/dsgn234`}>dsgn 234</Link>
-                        </li>
-                    </ul>
-                </Route>
-                <Route path={`${path}/dsgn234`}>
-                    <Dsgn234 />
-                </Route>
-            </Switch>
-            </div>
-        )
-    
+    const [count, setCount] = useState(1);
+    const instructions = ["Gently boil water in a large pot. Then salt the water.", 
+    "Crack your eggs into small individual cups, so they're ready to pour into the water.", 
+    "Using a spoon, begin stirring the water in a large, circular motion (like a tornado).", 
+    "Once the tornado is really moving, add the eggs. The motion of the water will wrap the egg white around itself so the egg stays together as it cooks.", 
+    "Cook the eggs for 2½ to 3 minutes, then remove with a slotted spoon."]
+    const cardAngles = [.5, -.6, .9, -.4, .1]
+
+    const counter = () => {
+        if (count < 5) {
+            setCount(count + 1)
+        } else {
+            setCount(1)
+        }
+    }
+
+    return (
+        <div>
+            <h1 class="title">how to poach an egg</h1>
+            <div class="counter">{count}/5</div>
+                <div class="text-container" onClick={counter} 
+                style={{ backgroundImage: `url(${background})`, transform: `rotate(${cardAngles[count]}deg)`}}>
+                    <div class="number">{count}</div>
+                    <div class="instructions">
+                        {instructions[count-1]}
+                    </div>
+                </div>
+            <img class="bg bottomRight" src="./explainer/clipimage.png" alt="clipped paper for background decoration" />
+            <img class="bg topRight" src="./explainer/egg.png" alt="cracked egg shells" />
+        </div>
+    )
+
 }
 
 

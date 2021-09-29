@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Old+Standard+TT:ital@0;1&display=swap');
+
+body {
+	background-color: #faf0de;
+	display:  flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Nanum Pen Script', cursive;
+    position: relative;
+    margin: 0;
+}
+
+.title {
+	font-size: 70px;
+    text-align: center;
+}
+
+.counter {
+    text-align: center;
+}
+
+.text-container {
+	width: 60vw;
+	height:  50vh;
+	background-color: #9e8772;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	transform: rotate(-.5deg);
+	position: relative;
+	z-index: 2;
+	color:  black;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.text-container:hover {
+    cursor: pointer;
+}
+
+.text-container .number {
+	font-family: 'Old Standard TT', serif;
+	font-size: 1000%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60%;
+	width: 40%;
+	text-align: center;
+	display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.text-container .instructions {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 50%;
+	width: 62%;
+	padding: 5%;
+	font-size: 200%;
+}
+
+.bg {
+	z-index: 1;
+	position: absolute;
+}
+
+.bg.topRight {
+    top: -5%;
+    right: 10px;
+    width: 20%;
+    transform: rotate(-90deg);
+}
+
+.bg.bottomRight {
+	right: -100px;
+	bottom:  -300px;
+}
+

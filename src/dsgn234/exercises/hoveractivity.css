@@ -485,6 +485,7 @@
 	bottom: 10%;
 	font-size: 80%;
 	text-align: center;
+	cursor: default;
 }
 
 .hoveractivity .credit .detail {
