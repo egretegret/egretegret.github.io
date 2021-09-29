@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Old+Standard+TT:ital@0;1&display=swap');
 
-body {
+.explainer {
 	background-color: #faf0de;
 	display:  flex;
 	flex-direction: column;
@@ -14,16 +14,16 @@ body {
     margin: 0;
 }
 
-.title {
+.explainer .title {
 	font-size: 70px;
     text-align: center;
 }
 
-.counter {
+.explainer .counter {
     text-align: center;
 }
 
-.text-container {
+.explainer .text-container {
 	width: 60vw;
 	height:  50vh;
 	background-color: #9e8772;
@@ -38,11 +38,11 @@ body {
     user-select: none; /* Standard */
 }
 
-.text-container:hover {
+.explainer .text-container:hover {
     cursor: pointer;
 }
 
-.text-container .number {
+.explainer .text-container .number {
 	font-family: 'Old Standard TT', serif;
 	font-size: 1000%;
 	position: absolute;
@@ -56,7 +56,7 @@ body {
     justify-content: center;
 }
 
-.text-container .instructions {
+.explainer .text-container .instructions {
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -66,19 +66,19 @@ body {
 	font-size: 200%;
 }
 
-.bg {
+.explainer .bg {
 	z-index: 1;
 	position: absolute;
 }
 
-.bg.topRight {
+.explainer .bg.topRight {
     top: -5%;
     right: 10px;
     width: 20%;
     transform: rotate(-90deg);
 }
 
-.bg.bottomRight {
+.explainer .bg.bottomRight {
 	right: -100px;
 	bottom:  -300px;
 }

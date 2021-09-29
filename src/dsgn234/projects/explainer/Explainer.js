@@ -29,7 +29,7 @@ function Explainer() {
     }
 
     return (
-        <div>
+        <div class="explainer">
             <h1 class="title">how to poach an egg</h1>
             <div class="counter">{count}/5</div>
                 <div class="text-container" onClick={counter} 
