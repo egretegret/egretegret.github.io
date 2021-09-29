@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Old+Standard+TT:ital@0;1&display=swap');
 
 .explainer {
-	background-color: #faf0de;
+	background-color: #edd4b4;
 	display:  flex;
 	flex-direction: column;
     align-items: center;
@@ -12,6 +12,7 @@
     font-family: 'Nanum Pen Script', cursive;
     position: relative;
     margin: 0;
+    cursor: default;
 }
 
 .explainer .title {
@@ -19,8 +20,13 @@
     text-align: center;
 }
 
+.explainer .title .white {
+    color: rgba(255, 255, 255, 0.767);
+}
+
 .explainer .counter {
     text-align: center;
+    font-size: 30px;
 }
 
 .explainer .text-container {
@@ -64,22 +70,43 @@
 	width: 62%;
 	padding: 5%;
 	font-size: 200%;
+    text-align: left;
+}
+
+.explainer .tape {
+    position: absolute;
+    z-index: 3;
+    left: 3%;
+    top: 3%;
 }
 
 .explainer .bg {
 	z-index: 1;
 	position: absolute;
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.15));
+}
+
+.explainer .bg.topLeft {
+    top: -10px;
+    left: -10px;
 }
 
 .explainer .bg.topRight {
-    top: -5%;
-    right: 10px;
-    width: 20%;
-    transform: rotate(-90deg);
+    top: 0;
+    right: 0;
+    max-width: 20%;
 }
 
 .explainer .bg.bottomRight {
 	right: -100px;
 	bottom:  -300px;
+}
+
+.explainer .bg.bottomLeft {
+    z-index: 4;
+    max-width: 40%;
+    max-height: 50%;
+    bottom: -20px;
+    left: 0;
 }
 
