@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import HoverActivity from "./dsgn234/exercises/HoverActivity";
 import Explainer from "./dsgn234/projects/explainer/Explainer";
+import Wikipedia from "./dsgn234/exercises/Wikipedia";
 
 function Dsgn234() {
     let { path, url } = useRouteMatch();
@@ -23,6 +24,7 @@ function Dsgn234() {
                     <ul>
                         <li><Link to={`${url}/hoveractivity`}>hover</Link></li>
                         <li><Link to={`${url}/explainer`}>explainer</Link></li>
+                        <li><Link to={`${url}/wikipedia`}>wikipedia</Link></li>
                     </ul>
                 </Route>
                 <Route path={`${path}/hoveractivity`}>
@@ -30,6 +32,9 @@ function Dsgn234() {
                 </Route>
                 <Route path={`${path}/explainer`}>
                     <Explainer />
+                </Route>
+                <Route path={`${path}/wikipedia`}>
+                    <Wikipedia />
                 </Route>
             </Switch>
 
