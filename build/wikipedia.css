@@ -31,14 +31,14 @@
     overflow:hidden;
 }
 
-/* .wikipedia:after .tooltip {
+.wikipedia:after .tooltip {
     opacity: 0;
 }
 
 .wikipedia:hover:after .tooltip {
     opacity: 1;
     transition: opacity  1s linear 1s;
-} */
+}
 
 .wikipedia .content-container {
 	display: flex;
