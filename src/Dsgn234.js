@@ -10,6 +10,7 @@ import {
 import HoverActivity from "./dsgn234/exercises/HoverActivity";
 import Explainer from "./dsgn234/projects/explainer/Explainer";
 import Wikipedia from "./dsgn234/exercises/Wikipedia";
+import Memories from "./dsgn234/exercises/Memories";
 
 function Dsgn234() {
     let { path, url } = useRouteMatch();
@@ -35,6 +36,9 @@ function Dsgn234() {
                 </Route>
                 <Route path={`${path}/wikipedia`}>
                     <Wikipedia />
+                </Route>
+                <Route path={`${path}/memories`}>
+                    <Memories />
                 </Route>
             </Switch>
 

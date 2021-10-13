@@ -19,7 +19,7 @@ function Wikipedia() {
         }
     }
 
-    window.addEventListener('load', (event) => {
+    const tooltipfollow = () => {
         console.log('page is fully loaded');
         var tooltipSpan = document.getElementById("tooltipmove");
 
@@ -29,11 +29,13 @@ function Wikipedia() {
             tooltipSpan.style.top = (y + 20) + 'px';
             tooltipSpan.style.left = (x + 20) + 'px';
         };
-      });
+      };
+
+    window.onload = tooltipfollow;
 
 
     return (
-        <div class="wikipedia" onClick={toggleCSS}>
+        <div class="wikipedia" onClick={toggleCSS} onmouseover={tooltipfollow}>
             <span class="tooltip" id="tooltipmove">click to toggle between different stylesheets</span>
             <link rel="stylesheet" type="text/css" href={css} />
             {/* <button onClick={toggleCSS}> toggle </button> */}
