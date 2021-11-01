@@ -14,7 +14,7 @@ function Jardins(props) {
     return (
         <div class="jardins">
              displaying jardins sous la pluie
-             <div class="home-button" onClick={()=>props.setDisplay(0)}>home</div>
+             <div class="home-button" >home</div>
         </div>
     );
 
