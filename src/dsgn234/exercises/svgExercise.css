@@ -1,0 +1,75 @@
+@keyframes circleTransition {
+    0% {
+      transform: scale(0.1);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+    
+    100% {
+      transform: scale(0.1);
+    }
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0);
+    }
+  
+    50% {
+      transform: rotate(180deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes colorChange {
+    0% {
+      background-color: black;
+    }
+  
+    50% {
+      background-color: blanchedalmond;
+    }
+    
+    100% {
+      background-color: black;
+    }
+  }
+  
+  .svgexercise .innerCircle {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: circleTransition;
+    transform-origin: center center;
+    animation-timing-function: ease-in-out;
+  }
+
+  .svgexercise .circle {
+    margin: auto;
+    display: flex;
+  }
+  
+  .svgexercise-container {
+    height: 450px;
+
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: rotation;
+    animation-timing-function: linear;
+  }
+
+  .svgexercise {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    animation: colorChange 10s 0s infinite;
+  }
+  

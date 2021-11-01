@@ -11,6 +11,8 @@ import HoverActivity from "./dsgn234/exercises/HoverActivity";
 import Explainer from "./dsgn234/projects/explainer/Explainer";
 import Wikipedia from "./dsgn234/exercises/Wikipedia";
 import Memories from "./dsgn234/exercises/Memories";
+import SvgExercise from "./dsgn234/exercises/SvgExercise";
+import FanPage from "./dsgn234/projects/fanPage/FanPage";
 
 function Dsgn234() {
     let { path, url } = useRouteMatch();
@@ -26,6 +28,7 @@ function Dsgn234() {
                         <li><Link to={`${url}/hoveractivity`}>hover</Link></li>
                         <li><Link to={`${url}/explainer`}>explainer</Link></li>
                         <li><Link to={`${url}/wikipedia`}>wikipedia</Link></li>
+                        <li><Link to={`${url}/fan-page`}>fan page</Link></li>
                     </ul>
                 </Route>
                 <Route path={`${path}/hoveractivity`}>
@@ -39,6 +42,12 @@ function Dsgn234() {
                 </Route>
                 <Route path={`${path}/memories`}>
                     <Memories />
+                </Route>
+                <Route path={`${path}/svgexercise`}>
+                    <SvgExercise />
+                </Route>
+                <Route path={`${path}/fan-page`}>
+                    <FanPage />
                 </Route>
             </Switch>
 

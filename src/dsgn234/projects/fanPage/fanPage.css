@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Nunito:wght@400;700&display=swap');
+
+.fan-page {
+    background-color: #FFECDE;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.fan-page h1 {
+
+}
+
+.fan-page h2 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.fan-page h3 {
+    font-weight: 400;
+    font-size: 36px; 
+}
+
+.fan-page .button-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.fan-page .button-container .button-pagodes,
+.fan-page .button-container .button-grenade,
+.fan-page .button-container .button-jardin {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #FFF8F8;
+}
+
+.fan-page .button-container .button-pagodes {
+    background-color: #F2AA81;
+    margin-right: 100px;
+}
+
+.fan-page .button-container .button-grenade {
+    background-color: #497458;
+    margin-bottom: 100px;
+}
+
+.fan-page .button-container .button-jardin {
+    background-color: #86AFD2;
+    margin-left: 100px;
+}
+
+.fan-page .text-container {
+    color: #F2AA81;
+}
