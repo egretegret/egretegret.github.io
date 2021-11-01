@@ -12,8 +12,9 @@ function Grenade(props) {
 
     return (
         <div class="grenade">
-             displaying la soiree dans grenade
-             <div class="home-button" onClick={()=>props.setDisplay(0)}>home</div>
+            <img src="../../../home.svg" alt="home button" onClick={()=>props.setDisplay(0)}/>
+            <br/>
+            displaying la soiree dans grenade
         </div>
     );
 
