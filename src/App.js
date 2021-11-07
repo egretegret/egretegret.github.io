@@ -28,6 +28,9 @@ class App extends React.Component {
               </Route> */}
             </Route>
           </Switch>
+          <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/addons/p5.sound.min.js"></script>
+            
           </div>
             );
   }

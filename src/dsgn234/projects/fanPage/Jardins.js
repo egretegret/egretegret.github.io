@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link,
-    useParams,
-    useRouteMatch
 } from "react-router-dom";
+import "./jardins.css";
+import jardins from "./assets/jardins.mp3";
 
 function Jardins(props) {
 
 
     return (
         <div class="jardins">
-             displaying jardins sous la pluie
-             <div class="home-button" >home</div>
+            displaying jardins sous la pluie
+            <Link to={props.path}><img src="../../../home.svg" alt="home button" /></Link>
         </div>
     );
 

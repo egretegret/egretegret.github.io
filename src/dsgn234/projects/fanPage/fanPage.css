@@ -17,13 +17,17 @@
     color: #497458;
 }
 
-.fan-page.jardin {
+.fan-page.jardins {
     background-color: #CDDAE4;
     color: #86AFD2;
 }
 
-.fan-page h1 {
-
+.fan-page,
+.pagodes,
+.grenade,
+.jardins h1 {
+    font-weight: 800;
+    font-size: 72px;
 }
 
 .fan-page h2 {
@@ -43,13 +47,13 @@
     align-items: center;
 }
 
-.fan-pae .button-container .active {
+.fan-page .button-container .active {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .fan-page .button-container .button-pagodes,
 .fan-page .button-container .button-grenade,
-.fan-page .button-container .button-jardin {
+.fan-page .button-container .button-jardins {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -70,9 +74,38 @@
     margin-bottom: 100px;
 }
 
-.fan-page .button-container .button-jardin {
+.fan-page .button-container .button-jardins {
     background-color: #86AFD2;
     margin-left: 100px;
+}
+
+.fan-page button {
+    width: 200px;
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+}
+
+.fan-page.pagodes button {
+    background-color: rgba(242, 170, 129, 0.2);
+    color: #F2AA81;
+}
+
+.fan-page.grenade button {
+    background-color: rgba(73, 116, 88, 0.2);
+    color: #497458;
+}
+
+.fan-page.jardins button {
+    background-color: rgba(134, 175, 210, 0.2);
+    color: #86AFD2;
+}
+
+.fan-page button:hover {
+    cursor: pointer;
+    color: #FFF8F8;
 }
 
 .fan-page .text-container {

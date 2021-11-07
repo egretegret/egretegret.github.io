@@ -1,0 +1,47 @@
+.pagodes {
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFECDE;
+    color: #F2AA81;
+    position: relative;
+}
+
+.pagodes .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.slider1 {
+        width: 80px;
+        background-color: #F2AA81;
+        height: 4px;
+        
+        /* Removes some defaults */
+        -webkit-appearance: none;
+
+}
+.slider1::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* Turns the cursor into the hand pointer icon when hovering over the slider  */
+    cursor: pointer;
+    
+  }
+
+.pagodes .header > svg,
+.pagodes .header > a {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.pagodes .title {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

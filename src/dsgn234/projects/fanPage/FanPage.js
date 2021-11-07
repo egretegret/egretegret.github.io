@@ -18,7 +18,6 @@ function FanPage() {
     let { path, url } = useRouteMatch();
 
     if (display === 1) {
-        // return <Pagodes setDisplay={setDisplay}/>;
         return (
             <Switch>
                 <Route exact path={path}>
@@ -26,7 +25,7 @@ function FanPage() {
                         <div class="button-container">
                             <div class="button-pagodes active" onClick={() => setDisplay(1)}>I</div>
                             <div class="button-grenade inactive" onClick={() => setDisplay(2)}>II</div>
-                            <div class="button-jardin inactive" onClick={() => setDisplay(3)}>III</div>
+                            <div class="button-jardins inactive" onClick={() => setDisplay(3)}>III</div>
                         </div>
                         <div class="text-container">
                             <h2>Pagodes</h2>
@@ -36,12 +35,11 @@ function FanPage() {
                     </div>
                 </Route>
                 <Route path={`${path}/pagodes`}>
-                    <Pagodes />
+                    <Pagodes path={path} />
                 </Route>
             </Switch>
         );
     } else if (display === 2) {
-        // return <Grenade setDisplay={setDisplay}/>;
         return (
             <Switch>
                 <Route exact path={path}>
@@ -49,7 +47,7 @@ function FanPage() {
                         <div class="button-container">
                             <div class="button-pagodes inactive" onClick={() => setDisplay(1)}>I</div>
                             <div class="button-grenade active" onClick={() => setDisplay(2)}>II</div>
-                            <div class="button-jardin inactive" onClick={() => setDisplay(3)}>III</div>
+                            <div class="button-jardins inactive" onClick={() => setDisplay(3)}>III</div>
                         </div>
                         <div class="text-container">
                             <h2>La soirée dans Grenade</h2>
@@ -59,20 +57,19 @@ function FanPage() {
                     </div>
                 </Route>
                 <Route path={`${path}/grenade`}>
-                    <Grenade />
+                    <Grenade path={path} />
                 </Route>
             </Switch>
         );
     } else if (display === 3) {
-        // return <Jardins setDisplay={setDisplay}/>;
         return (
             <Switch>
                 <Route exact path={path}>
-                    <div class="fan-page jardin">
+                    <div class="fan-page jardins">
                         <div class="button-container">
                             <div class="button-pagodes inactive" onClick={() => setDisplay(1)}>I</div>
                             <div class="button-grenade inactive" onClick={() => setDisplay(2)}>II</div>
-                            <div class="button-jardin active" onClick={() => setDisplay(3)}>III</div>
+                            <div class="button-jardins active" onClick={() => setDisplay(3)}>III</div>
                         </div>
                         <div class="text-container">
                             <h2>Jardins sous la pluie</h2>
@@ -82,22 +79,35 @@ function FanPage() {
                     </div>
                 </Route>
                 <Route path={`${path}/jardins`}>
-                    <Jardins />
+                    <Jardins path={path} />
                 </Route>
             </Switch>);
     } else {
         return (
-            <div class="fan-page">
-                <div class="button-container">
-                    <div class="button-pagodes" onClick={() => setDisplay(1)}>I</div>
-                    <div class="button-grenade" onClick={() => setDisplay(2)}>II</div>
-                    <div class="button-jardin" onClick={() => setDisplay(3)}>III</div>
-                </div>
-                <div class="text-container">
-                    <h2>Welcome to Debussy's Estampes</h2>
-                    <h3>Choose your mood</h3>
-                </div>
-            </div>
+            <Switch>
+                <Route exact path={path}>
+                    <div class="fan-page">
+                        <div class="button-container">
+                            <div class="button-pagodes" onClick={() => setDisplay(1)}>I</div>
+                            <div class="button-grenade" onClick={() => setDisplay(2)}>II</div>
+                            <div class="button-jardins" onClick={() => setDisplay(3)}>III</div>
+                        </div>
+                        <div class="text-container">
+                            <h2>Welcome to Debussy's Estampes</h2>
+                            <h3>Choose your mood</h3>
+                        </div>
+                    </div>
+                </Route>
+                <Route path={`${path}/pagodes`}>
+                    <Pagodes path={path} />
+                </Route>
+                <Route path={`${path}/grenade`}>
+                    <Grenade path={path} />
+                </Route>
+                <Route path={`${path}/jardins`}>
+                    <Jardins path={path} />
+                </Route>
+            </Switch>
         );
     }
 
