@@ -169,11 +169,19 @@ function Pagodes(props) {
 
     }
 
+    document.body.onkeyup = function(e){
+        if (e.keyCode === 32){
+            toggleSound();
+        } else if (e.keyCode === 83) {
+            toggleSettings();
+        }
+    }
+
     return (
         <div class="pagodes">
             <div class="header">
                 <Link to={props.path} onClick={stopSound}><Home /></Link>
-                <Settings onClick={toggleSettings} />
+                <Settings className="settings-button" onClick={toggleSettings} />
             </div>
             <div class="content">
                 <h1 class="title"> Pagodes </h1>
