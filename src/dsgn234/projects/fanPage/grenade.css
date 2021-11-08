@@ -3,4 +3,131 @@
     width: 100vw;
     background-color: #C6E0C4;
     color: #497458;
+    overflow: hidden;
+}
+
+.grenade .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+     -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+         animation: fadein 3s;
+
+    position: relative;
+    z-index: 5;
+}
+
+.grenade .header > svg,
+.grenade .header > a {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.grenade-progress-bar {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80vw;
+    background-color: #497458;;
+    height: 4px;
+    /* Removes some defaults */
+    -webkit-appearance: none;
+}
+
+.grenade-progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* progress seek doesn't work lol */
+    cursor: default;
+}
+
+.grenade #settings {
+    display: none;
+    flex-direction: column;
+    width: 25%;
+    margin: auto;
+    height: 80%;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    font-size: 36px;
+    font-weight: 400;
+
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
+}
+
+.settings-button:hover {
+    cursor: pointer;
+}
+
+.grenade-setting-slider {
+        max-width: 1000px;
+        width: 100%;
+        background-color: #497458;
+        height: 4px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        /* Removes some defaults */
+        -webkit-appearance: none;
+
+        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 3s; /* Firefox < 16 */
+         -ms-animation: fadein 3s; /* Internet Explorer */
+          -o-animation: fadein 3s; /* Opera < 12.1 */
+             animation: fadein 3s;
+
+}
+
+.grenade-setting-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.grenade .title {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 800;
+    font-size: 72px;
+
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+     -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+         animation: fadein 3s;
+}
+
+.grenade .title:hover {
+    cursor: default;
+}
+
+.grenade .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    overflow: hidden;
 }

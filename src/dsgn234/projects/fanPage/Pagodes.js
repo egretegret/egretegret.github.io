@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
     Link,
 } from "react-router-dom";
@@ -39,6 +39,7 @@ function Pagodes(props) {
         progressBar.addClass("pagodes-progress-bar");
         progressBar.addClass("content");
 
+        // ctrl + c and ctrl + v are easier than writing a function, lol
         rotationSlider = p5.createSlider(0, 360, 108);
         rotationSlider.addClass("pagodes-rotation-slider");
         rotationSlider.addClass("pagodes-setting-slider");

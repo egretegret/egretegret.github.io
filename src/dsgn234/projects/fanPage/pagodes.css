@@ -19,6 +19,13 @@
          animation: fadein 3s;
 }
 
+.pagodes .header > svg,
+.pagodes .header > a {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+
 .pagodes-progress-bar {
     position: absolute;
     bottom: 5%;
@@ -84,6 +91,7 @@
              animation: fadein 3s;
 
 }
+
 .pagodes-setting-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -92,13 +100,6 @@
     height: 20px;
     border-radius: 50%;
     cursor: pointer;
-    
-  }
-
-.pagodes .header > svg,
-.pagodes .header > a {
-    margin-left: 35px;
-    margin-right: 35px;
 }
 
 .pagodes .title {
@@ -107,6 +108,8 @@
     left: 0;
     right: 0;
     margin: auto;
+    font-weight: 800;
+    font-size: 72px;
 
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 3s; /* Firefox < 16 */
