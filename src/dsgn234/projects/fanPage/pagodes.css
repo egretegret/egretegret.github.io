@@ -17,6 +17,9 @@
      -ms-animation: fadein 3s; /* Internet Explorer */
       -o-animation: fadein 3s; /* Opera < 12.1 */
          animation: fadein 3s;
+
+    position: relative;
+    z-index: 5;
 }
 
 .pagodes .header > svg,
@@ -47,6 +50,7 @@
     border-radius: 50%;
     /* progress seek doesn't work lol */
     cursor: default;
+    border: hidden;
 }
 
 .pagodes #settings {
@@ -100,6 +104,7 @@
     height: 20px;
     border-radius: 50%;
     cursor: pointer;
+    border: hidden;
 }
 
 .pagodes .title {
@@ -120,6 +125,15 @@
 
 .pagodes .title:hover {
     cursor: default;
+}
+
+.pagodes .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    overflow: hidden;
 }
 
 @keyframes fadein {

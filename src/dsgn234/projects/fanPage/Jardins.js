@@ -16,7 +16,13 @@ function Jardins(props) {
 
     let music, amplitude, windSound, rainSound, thunderSound;
     let duration, current;
-    let distanceSlider, quantitySlider, sizeSlider, progressBar;
+    let accelerationSlider, quantitySlider, sizeSlider, progressBar;
+
+    let acceleration = 0.0098;
+    let nDrops = 50;
+    let drops = [];
+    let size = 3;
+    let p;
 
     const preload = (p5) => {
         music = p5.loadSound(jardins);
@@ -26,10 +32,15 @@ function Jardins(props) {
     }
 
     const setup = (p5, canvasParentRef) => {
-        let cnv = p5.createCanvas(1600, 900).parent(canvasParentRef);
+        p = p5;
+        let cnv = p5.createCanvas(p5.displayWidth, p5.displayHeight).parent(canvasParentRef);
         cnv.mousePressed(toggleSound);
 
         duration = music.duration();
+
+        for (let i = 0; i < nDrops; i++) {
+            drops.push(new Drop(p5));
+        }
 
         let settingsDiv = document.getElementById("settings");
 
@@ -37,30 +48,31 @@ function Jardins(props) {
         progressBar.addClass("jardins-progress-bar");
         progressBar.addClass("content");
 
-        distanceSlider = p5.createSlider(0, 200, 120);
-        distanceSlider.addClass("jardins-distance-slider");
-        distanceSlider.addClass("jardins-setting-slider");
-        let distanceLabel = document.createElement("div");
-        distanceLabel.classList.add("label");
-        distanceLabel.innerHTML = "people";
-        settingsDiv.appendChild(distanceLabel);
-        distanceSlider.parent(settingsDiv);
+        accelerationSlider = p5.createSlider(0, 100, 20);
+        accelerationSlider.addClass("jardins-accleration-slider");
+        accelerationSlider.addClass("jardins-setting-slider");
+        let accelerationLabel = document.createElement("div");
+        accelerationLabel.classList.add("label");
+        accelerationLabel.innerHTML = "wind";
+        settingsDiv.appendChild(accelerationLabel);
+        accelerationSlider.parent(settingsDiv);
 
-        quantitySlider = p5.createSlider(1, 10, 5, 1);
+        quantitySlider = p5.createSlider(1, 500, 200, 1);
         quantitySlider.addClass("jardins-quantity-slider");
         quantitySlider.addClass("jardins-setting-slider");
+        quantitySlider.mouseClicked(mouseClick);
         let quantityLabel = document.createElement("div");
         quantityLabel.classList.add("label");
-        quantityLabel.innerHTML = "walking";
+        quantityLabel.innerHTML = "rain";
         settingsDiv.appendChild(quantityLabel);
         quantitySlider.parent(settingsDiv);
 
-        sizeSlider = p5.createSlider(0, 500, 120);
+        sizeSlider = p5.createSlider(5, 100, 40);
         sizeSlider.addClass("jardins-size-slider");
         sizeSlider.addClass("jardins-setting-slider");
         let sizeLabel = document.createElement("div");
         sizeLabel.classList.add("label");
-        sizeLabel.innerHTML = "crickets";
+        sizeLabel.innerHTML = "thunder";
         settingsDiv.appendChild(sizeLabel);
         sizeSlider.parent(settingsDiv);
 
@@ -79,29 +91,81 @@ function Jardins(props) {
 
     const draw = p5 => {
 
-        let distance = distanceSlider.value();
-        let quantity = quantitySlider.value();
-        let size = sizeSlider.value();
+        p5.clear();
 
-        p5.background(198, 224, 196);
+        acceleration = accelerationSlider.value() / 100;
+        nDrops = quantitySlider.value();
+        size = sizeSlider.value();
+
+        p5.background(205, 218, 228);
 
         let level = amplitude.getLevel();
-        let r = p5.map(level, 0, .2, 255, 73);
-        let g = p5.map(level, 0, .2, 255, 116);
-        let b = p5.map(level, 0, .2, 255, 88);
+        let mappedOpacity = p5.map(level, 0, .05, 30, 255);
 
-        let crowdVol = p5.map(distance, 0, 1, 0, .001);
-        let walkingVol = p5.map(quantity, 0, 1, 0, .001);
-        let nightVol = p5.map(size, 0, 1, 0, .001);
+        p5.fill(255, mappedOpacity);
+        drops.forEach(function (d) {
+            d.drawAndDrop();
+        });
 
-        windSound.setVolume(crowdVol);
-        rainSound.setVolume(walkingVol);
-        thunderSound.setVolume(nightVol);
+        let windVol = p5.map(level, 0, 1, 0, .1);
+        let rainVol = p5.map(nDrops, 0, 1, 0, .001);
+        let thunderVol = p5.map(size, 0, 1, 0, .005);
+
+        windSound.setVolume(windVol);
+        rainSound.setVolume(rainVol);
+        thunderSound.setVolume(thunderVol);
 
         if (music.isPlaying()) {
             current = music.currentTime();
         }
         progressBar.value(current);
+    }
+
+    function Drop(p5) {
+
+        this.p5 = p5;
+
+        this.initX = function () {
+            this.x = p5.random() * p5.width;
+        };
+        this.initY = function () {
+            this.y = -p5.random() * p5.height / 3; // Initialise rain somewhat off the screen
+        };
+
+        this.initX();
+        this.y = p5.random() * p5.height;
+
+        this.length = p5.random() * 10;
+        this.speed = p5.random();
+
+        this.drawAndDrop = function () {
+            this.draw();
+            this.drop();
+        };
+
+        this.draw = function () {
+            p5.noStroke();
+            p5.triangle(this.x - size / 2, this.y, this.x + size / 2, this.y, this.x, this.y - size * 2)
+            p5.arc(this.x, this.y, size, size, 0, p5.PI, p5.PIE);
+        };
+
+        this.drop = function () {
+            if (this.y < p5.height) {
+                this.y += this.speed;
+                this.speed += acceleration;
+            } else {
+                this.speed = p5.random();
+                this.initY();
+                this.initX();
+            }
+        };
+    }
+
+    const mouseClick = () => {
+        drops = [];
+        for (let i = 0; i < nDrops; i++) {
+            drops.push(new Drop(p));
+        }
     }
 
     const toggleSound = () => {
@@ -144,8 +208,8 @@ function Jardins(props) {
 
     }
 
-    document.body.onkeyup = function(e){
-        if (e.keyCode === 32){
+    document.body.onkeyup = function (e) {
+        if (e.keyCode === 32) {
             toggleSound();
         } else if (e.keyCode === 83) {
             toggleSettings();

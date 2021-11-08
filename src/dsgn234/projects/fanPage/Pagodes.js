@@ -16,7 +16,8 @@ function Pagodes(props) {
 
     let music, amplitude, windSound, birdSound, riverSound;
     let duration, current;
-    let rotationSlider, sizeSlider, opacitySlider, progressBar;
+    let rotationSlider, heightSlider, opacitySlider, progressBar;
+    let shapeSize = 500;
 
     const preload = (p5) => {
         music = p5.loadSound(pagodes);
@@ -26,7 +27,7 @@ function Pagodes(props) {
     }
 
     const setup = (p5, canvasParentRef) => {
-        let cnv = p5.createCanvas(500, 500).parent(canvasParentRef);
+        let cnv = p5.createCanvas(p5.displayWidth, p5.displayHeight).parent(canvasParentRef);
         cnv.mousePressed(toggleSound);
 
         duration = music.duration();
@@ -47,14 +48,14 @@ function Pagodes(props) {
         settingsDiv.appendChild(rotationLabel);
         rotationSlider.parent(settingsDiv);
 
-        sizeSlider = p5.createSlider(0, 1500, 750);
-        sizeSlider.addClass("pagodes-size-slider");
-        sizeSlider.addClass("pagodes-setting-slider");
-        let sizeLabel = document.createElement("div");
-        sizeLabel.classList.add("label");
-        sizeLabel.innerHTML = "bird chatter";
-        settingsDiv.appendChild(sizeLabel);
-        sizeSlider.parent(settingsDiv);
+        heightSlider = p5.createSlider(-p5.displayHeight / 4, p5.displayHeight / 2, 0);
+        heightSlider.addClass("pagodes-size-slider");
+        heightSlider.addClass("pagodes-setting-slider");
+        let heightLabel = document.createElement("div");
+        heightLabel.classList.add("label");
+        heightLabel.innerHTML = "bird chatter";
+        settingsDiv.appendChild(heightLabel);
+        heightSlider.parent(settingsDiv);
 
         opacitySlider = p5.createSlider(0, 255, 200);
         opacitySlider.addClass("pagodes-opacity-slider");
@@ -80,22 +81,22 @@ function Pagodes(props) {
     const draw = p5 => {
 
         let rotation = rotationSlider.value();
-        let size = sizeSlider.value();
+        let height = heightSlider.value();
         let opacity = opacitySlider.value();
 
         p5.background(255, 236, 222); // 222
 
         let level = amplitude.getLevel();
-        let shapeWidth = p5.map(level, 0, 1, 20, size);
+        let size = p5.map(level, 0, 1, 20, shapeSize);
         let mappedOpacity = p5.map(opacity, 0, 255, 40, 255)
 
         p5.push();
         p5.angleMode(p5.DEGREES);
-        p5.translate(p5.width / 2, p5.height / 2);
+        p5.translate(p5.width / 2, p5.height / 2 - height);
         p5.rotate(rotation);
         p5.stroke(0, 0, 0, 0);
         p5.fill(255, 255, 255, mappedOpacity);
-        polygon(p5, 0, 0, shapeWidth, 5);
+        polygon(p5, 0, 0, size, 5);
         p5.pop();
 
         let windVol = p5.map(rotation, 0, 1, 0, .001);

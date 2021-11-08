@@ -37,7 +37,7 @@ function Grenade(props) {
     }
 
     const setup = (p5, canvasParentRef) => {
-        let cnv = p5.createCanvas(1600, 900).parent(canvasParentRef);
+        let cnv = p5.createCanvas(p5.displayWidth, p5.displayHeight).parent(canvasParentRef);
         cnv.mousePressed(toggleSound);
 
         duration = music.duration();
@@ -100,14 +100,15 @@ function Grenade(props) {
         p5.background(198, 224, 196);
 
         let level = amplitude.getLevel();
-        let r = p5.map(level, 0, .2, 255, 73);
-        let g = p5.map(level, 0, .2, 255, 116);
-        let b = p5.map(level, 0, .2, 255, 88);
+        // let r = p5.map(level, 0, .2, 255, 73);
+        // let g = p5.map(level, 0, .2, 255, 116);
+        // let b = p5.map(level, 0, .2, 255, 88);
+        let o = p5.map(level, 0, .1, 50, 255);
 
-        p5.tint(r, g, b);
+        p5.tint(255, o);
         dragSegment(p5, 0, p5.mouseX, p5.mouseY);
         for (let i = 0; i < x.length - 1; i++) {
-            p5.tint(r - i * 5, g - i * 5, b - i * 5);
+            p5.tint(255, o - i * 5);
             dragSegment(p5, i + 1, x[i], y[i]);
         }
 
