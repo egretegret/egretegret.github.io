@@ -4,6 +4,7 @@
     background-color: #FFECDE;
     color: #F2AA81;
     position: relative;
+    overflow: hidden;
 }
 
 .pagodes .header {
@@ -35,16 +36,33 @@
     cursor: default;
 }
 
-.slider1 {
-        width: 80px;
+.pagodes #settings {
+    display: none;
+    flex-direction: column;
+    width: 25%;
+    margin: auto;
+    height: 80%;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.pagodes-setting-slider {
+        max-width: 1000px;
+        width: 100%;
         background-color: #F2AA81;
         height: 4px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
         
         /* Removes some defaults */
         -webkit-appearance: none;
 
 }
-.slider1::-webkit-slider-thumb {
+.pagodes-setting-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     background: white;
