@@ -12,6 +12,29 @@
     align-items: baseline;
 }
 
+.pagodes-progress-bar {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80vw;
+    background-color: #F2AA81;
+    height: 4px;
+    /* Removes some defaults */
+    -webkit-appearance: none;
+}
+
+.pagodes-progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* progress seek doesn't work lol */
+    cursor: default;
+}
+
 .slider1 {
         width: 80px;
         background-color: #F2AA81;
@@ -23,11 +46,11 @@
 }
 .slider1::-webkit-slider-thumb {
     -webkit-appearance: none;
+    appearance: none;
     background: white;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    /* Turns the cursor into the hand pointer icon when hovering over the slider  */
     cursor: pointer;
     
   }
@@ -40,7 +63,7 @@
 
 .pagodes .title {
     position: absolute;
-    top: 20%;
+    top: 12%;
     left: 0;
     right: 0;
     margin: auto;
