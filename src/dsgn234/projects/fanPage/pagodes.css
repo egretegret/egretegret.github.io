@@ -136,6 +136,21 @@
     overflow: hidden;
 }
 
+.pagodes .content .nav-arrows {
+    position: absolute;
+    z-index: 5;
+}
+
+.pagodes .content .left-arrow {
+    left: 30px;
+    top: 50%;
+}
+
+.pagodes .content .right-arrow {
+    right: 30px;
+    top: 50%;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }

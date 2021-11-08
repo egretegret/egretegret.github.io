@@ -28,17 +28,20 @@
 .jardins h1 {
     font-weight: 800;
     font-size: 72px;
+    cursor: default;
 }
 
 .fan-page h2 {
     font-weight: 700;
     font-size: 48px;
     margin-bottom: 0;
+    cursor: default;
 }
 
 .fan-page h3 {
     font-weight: 400;
     font-size: 36px; 
+    cursor: default;
 }
 
 .fan-page .button-container {

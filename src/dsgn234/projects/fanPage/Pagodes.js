@@ -11,6 +11,8 @@ import birds from "./assets/birds.mp3";
 import river from "./assets/river.mp3";
 import { ReactComponent as Settings } from "./assets/settings.svg";
 import { ReactComponent as Home } from "./assets/home.svg";
+// import { ReactComponent as RightArrow } from "./assets/rightArrow.svg";
+// import { ReactComponent as LeftArrow } from "./assets/leftArrow.svg";
 
 function Pagodes(props) {
 
@@ -186,6 +188,8 @@ function Pagodes(props) {
             <div class="content">
                 <h1 class="title"> Pagodes </h1>
                 <Sketch preload={preload} setup={setup} draw={draw} />
+                {/* <Link to={`${props.path}/jardins`} onClick={stopSound}><LeftArrow className="nav-arrows left-arrow"/></Link>
+                <Link to={`${props.path}/grenade`} onClick={stopSound}><RightArrow className="nav-arrows right-arrow"/></Link> */}
             </div>
             <div id="settings">
             </div>
