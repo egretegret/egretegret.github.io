@@ -28,7 +28,7 @@ function Pagodes(props) {
     //     }
     // });
 
-    document.getElementById("favicon").href = "./fanpage/pentagon.svg";
+    // document.getElementById("favicon").href = "./fanpage/pentagon.svg";
 
     let music, amplitude, windSound, birdSound, riverSound;
     let duration, current;
