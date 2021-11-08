@@ -18,15 +18,15 @@ function Pagodes(props) {
 
     document.title = "Pagodes";
 
-    const mounted = useRef();
-    useEffect(() => {
-        if (!mounted.current) {
-            // document.head.getElement "./fanpage/pentagon.svg";
-            mounted.current = true;
-        } else {
-            // do componentDidUpdate logic
-        }
-    });
+    // const mounted = useRef();
+    // useEffect(() => {
+    //     if (!mounted.current) {
+    //         // document.head.getElement "./fanpage/pentagon.svg";
+    //         mounted.current = true;
+    //     } else {
+    //         // do componentDidUpdate logic
+    //     }
+    // });
 
     document.getElementById("favicon").href = "./fanpage/pentagon.svg";
 
