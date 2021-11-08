@@ -14,6 +14,8 @@ import { ReactComponent as Home } from "./assets/home.svg";
 
 function Jardins(props) {
 
+    document.title = "Jardins";
+
     let music, amplitude, windSound, rainSound, thunderSound;
     let duration, current;
     let accelerationSlider, quantitySlider, sizeSlider, progressBar;

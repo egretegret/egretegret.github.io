@@ -14,6 +14,8 @@ import './fanPage.css';
 
 function FanPage() {
 
+    document.title = "Fan Page";
+
     const [display, setDisplay] = useState(0);
     let { path, url } = useRouteMatch();
 

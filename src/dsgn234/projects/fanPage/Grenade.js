@@ -14,6 +14,9 @@ import { ReactComponent as Home } from "./assets/home.svg";
 import feet from './assets/feet.png';
 
 function Grenade(props) {
+
+    document.title = "Grenade";
+
     let music, amplitude, crowdSound, walkingSound, nightSound;
     let duration, current;
     let distanceSlider, quantitySlider, sizeSlider, progressBar;

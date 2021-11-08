@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import Sketch from "react-p5";
@@ -15,6 +15,20 @@ import { ReactComponent as Home } from "./assets/home.svg";
 // import { ReactComponent as LeftArrow } from "./assets/leftArrow.svg";
 
 function Pagodes(props) {
+
+    document.title = "Pagodes";
+
+    const mounted = useRef();
+    useEffect(() => {
+        if (!mounted.current) {
+            // document.head.getElement "./fanpage/pentagon.svg";
+            mounted.current = true;
+        } else {
+            // do componentDidUpdate logic
+        }
+    });
+
+    document.getElementById("favicon").href = "./fanpage/pentagon.svg";
 
     let music, amplitude, windSound, birdSound, riverSound;
     let duration, current;
