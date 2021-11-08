@@ -67,7 +67,7 @@ function Jardins(props) {
         settingsDiv.appendChild(quantityLabel);
         quantitySlider.parent(settingsDiv);
 
-        sizeSlider = p5.createSlider(5, 100, 40);
+        sizeSlider = p5.createSlider(5, 60, 20);
         sizeSlider.addClass("jardins-size-slider");
         sizeSlider.addClass("jardins-setting-slider");
         let sizeLabel = document.createElement("div");
