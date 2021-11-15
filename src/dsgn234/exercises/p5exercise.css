@@ -1,0 +1,56 @@
+.p5exercise {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+.p5exercise .p5-overlay {
+    width: 500px;
+    margin: auto;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p5exercise .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    background: #d3d3d3; /* Grey background */
+    width: 500px;
+    height: 4px;
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+.p5exercise .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.p5exercise .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 21px; /* Set a specific slider handle width */
+    height: 21px; /* Slider handle height */
+    border-radius: 50%;
+    background: white; 
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+.p5exercise .slider::-moz-range-thumb {
+    width: 21px; /* Set a specific slider handle width */
+    height: 21px; /* Slider handle height */
+    background: white;
+    cursor: pointer; /* Cursor on hover */
+  }
