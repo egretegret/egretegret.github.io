@@ -12,7 +12,7 @@ function P5Exercise() {
     // tree branching taken from an example on the p5 website
 
     function setup(p5, canvasParentRef) {
-        p5.createCanvas(500, 500, p5.WEBGL).parent(canvasParentRef);
+        p5.createCanvas(500, 600, p5.WEBGL).parent(canvasParentRef);
         p = p5;
 
         let div = p5.createDiv().class("p5-overlay").parent(canvasParentRef);
