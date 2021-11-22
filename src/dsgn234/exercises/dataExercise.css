@@ -1,0 +1,71 @@
+  .data-exercise {
+    background-color: white;
+    color: black;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .data-exercise .d3-container {
+      width: 850px;
+  }
+  
+  .data-exercise .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 820px;
+  }
+  
+  .data-exercise h1 {
+    font-weight: normal;
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .data-exercise .tick {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .data-exercise .domain {
+    display: none;
+  }
+  
+  .data-exercise line {
+    display: none;
+  }
+  
+  .data-exercise text {
+    cursor: default;
+  }
+  
+  .data-exercise .leisure,
+  .data-exercise .work {
+    fill: black;
+    transition: fill 500ms ease;
+    cursor: default;
+  }
+  
+  .data-exercise .leisure:hover,
+  .data-exercise .work:hover {
+    fill: white;
+  }
+  
+  .data-exercise button {
+    border: 2px solid black;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .data-exercise button:hover {
+    border: 2px solid black;
+    background-color: gray;
+    cursor: pointer;
+  }
+  

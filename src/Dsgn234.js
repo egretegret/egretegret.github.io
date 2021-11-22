@@ -15,6 +15,7 @@ import SvgExercise from "./dsgn234/exercises/SvgExercise";
 import FanPage from "./dsgn234/projects/fanPage/FanPage";
 import JSActivity from "./dsgn234/exercises/JSActivity";
 import P5Exercise from "./dsgn234/exercises/P5exercise";
+import DataExercise from "./dsgn234/exercises/DataExercise";
 
 function Dsgn234() {
     let { path, url } = useRouteMatch();
@@ -33,6 +34,7 @@ function Dsgn234() {
                         <li><Link to={`${url}/fan-page`}>fan page</Link></li>
                         <li><Link to={`${url}/jsactivity`}>js activity</Link></li>
                         <li><Link to={`${url}/p5exercise`}>p5 exercise</Link></li>
+                        <li><Link to={`${url}/dataexercise`}>data exercise</Link></li>
                     </ul>
                 </Route>
                 <Route path={`${path}/hoveractivity`}>
@@ -58,6 +60,9 @@ function Dsgn234() {
                 </Route>
                 <Route path={`${path}/p5exercise`}>
                     <P5Exercise />
+                </Route>
+                <Route path={`${path}/dataexercise`}>
+                    <DataExercise />
                 </Route>
             </Switch>
 
