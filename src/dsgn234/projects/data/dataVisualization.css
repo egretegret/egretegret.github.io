@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Yuji+Syuku&display=swap');
+
+.data-visualization {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.data-visualization .title {
+    font-size: 64px;
+    text-align: left;
+    max-width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 5px;
+}
+
+.data-visualization .time-slider {
+    height: 50vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.data-visualization .time-slider .time-slider-line {
+    height: 10px;
+    width: 100%;
+    background-color: black;
+    /* margin-top: 30px;
+    margin-bottom: 30px;
+    background-clip: border-box; */
+    z-index: 3;
+}
+
+.data-visualization .time-slider .time-slider-line:hover {
+    background-color: grey;
+}
+
+.data-visualization .time-slider .time-slider-day {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: 'Yuji Syuku', serif;
+    font-size: 84px;
+    z-index: 1;
+}
+
+.data-visualization .data {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    right: 250px;
+    width: calc(100% - 500px);
+    height: 100%;
+    /* display: none; */
+}
+
+.data-visualization img {
+    position: absolute;
+    max-width: 150px;
+    max-height: 200px;
+}
+
+.data-visualization #docs {
+    left: 1vw;
+    bottom: 5vh;
+}
+
+.data-visualization #blackjeans {
+    right: 15vw;
+    bottom: 10vh;
+}
+
+.data-visualization #turtleneck {
+    left: 7vw;
+    top: 20vh;
+}
+
+.data-visualization #coat {
+    right: 2vw;
+    top: 5vh;
+}
+
+.data-visualization #blackskirt {
+    left: 25vw;
+    bottom: 20vh;
+}
+
+.data-visualization #blackturtleneck {
+    right: 9vw;
+    top: 29vh;
+}
+
+.data-visualization #blacksocks {
+    top: 2vh;
+    left: 35vw;
+}
+
+.data-visualization #cardigan {
+    top: 5vh;
+    right: 45vw;
+}
+
+.data-visualization #silvernecklace {
+    left: 12vw;
+    bottom: 26vh;
+}
+
+.data-visualization #tank {
+    left: 2vw;
+    bottom: 40vh;
+}
+
+.data-visualization #browntop {
+    top: 33vh;
+    right: 26vw;
+}
+
+.data-visualization #browncardigan {
+    right: 4vw;
+    bottom: 25vh;
+}
+
+.data-visualization #blacklace {
+    left: 2vw;
+    bottom: 19vh;
+}
+
+.data-visualization #greenjacket {
+    left: 20vw;
+    top: 26vh;
+}
+
+.data-visualization #whitesocks {
+    left: 50%;
+    bottom: 5vh;
+}
+
+.data-visualization #brownbelt {
+    left: 35%;
+    bottom: 2vh;
+}
+.data-visualization #thinbrownbelt {
+    right: 24%;
+    bottom: 30%;
+}
+.data-visualization #headband {
+    left: 5%;
+    top: 2%;
+}
+.data-visualization #creamskirt {
+    left: 12vw;
+    bottom: 10%;
+}
