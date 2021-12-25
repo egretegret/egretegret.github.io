@@ -30,6 +30,12 @@ function DataVisualization() {
 
         document.getElementById("cover").style.display = "none";
 
+        
+        var weather = document.getElementsByClassName("weather");
+        for (var i = 0; i < weather.length; i++) {
+            weather[i].style.display = "block";
+        }
+
     }
 
     const reset = () => {
@@ -41,6 +47,12 @@ function DataVisualization() {
         }
 
         document.getElementById("cover").style.display = "block";
+
+        var weather = document.getElementsByClassName("weather");
+        console.log(weather);
+        for (var i = 0; i < weather.length; i++) {
+            weather[i].style.display = "none";
+        }
     }
 
     let name = "";

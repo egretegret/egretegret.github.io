@@ -347,6 +347,66 @@
     top: 40%;
 }
 
+.data-visualization #wind1 {
+    left: 20%;
+    top: 28%;
+}
+
+.data-visualization #wind2 {
+    left: 47%;
+    top: 74%;
+}
+
+.data-visualization #wind3 {
+    left: 75%;
+    top: 7%;
+}
+
+.data-visualization #cloud1 {
+    left: 17%;
+    top: 40%;
+}
+
+.data-visualization #cloud2 {
+    left: 47%;
+    top: 66%;
+}
+
+.data-visualization #cloud3 {
+    left: 70%;
+    top: 16%;
+}
+
+.data-visualization #rain1 {
+    left: 10%;
+    top: 70%;
+}
+
+.data-visualization #rain2 {
+    left: 20%;
+    top: 27%;
+}
+
+.data-visualization #rain3 {
+    left: 80%;
+    top: 57%;
+}
+
+.data-visualization #sun1 {
+    left: 33%;
+    top: 66%;
+}
+
+.data-visualization #sun2 {
+    left: 21%;
+    top: 21%;
+}
+
+.data-visualization #sun3 {
+    left: 83%;
+    top: 33%;
+}
+
 @media screen and (max-width: 1200px) {
 
     .data-visualization {
@@ -377,8 +437,8 @@
     }
 
     .data-visualization .time-slider-line {
-        height: 20px!important;
-        width: 15px!important;
+        height: 25px!important;
+        width: 20px!important;
     }
 
     .data-visualization .time-slider-day {
@@ -416,6 +476,10 @@
 
     .data-visualization #coat {
         top: 12%;
+    }
+
+    .data-visualization #blackskirt {
+        top: 78%;
     }
 
     .data-visualization #silvernecklace {
@@ -475,13 +539,58 @@
         top: 15%;
     }
 
+    .data-visualization #wind1 {
+        top: 40%;
+    }
+
+    .data-visualization #wind3 {
+        left: 60%;
+        top: 29%;
+    }
+
+    .data-visualization #cloud1 {
+        top: 56%;
+    }
+
+    .data-visualization #cloud2 {
+        left: 88%;
+        top: 88%;
+    }
+
+    .data-visualization #cloud3 {
+        top: 47%;
+    }
+
+    .data-visualization #rain1 {
+        left: 4%;
+        top: 88%;
+    }
+    
+    .data-visualization #rain2 {
+        left: 75%;
+        top: 50%;
+    }
+    
+    .data-visualization #rain3 {
+        top: 75%;
+    }
+
+    .data-visualization #sun2 {
+        top: 12%;
+        left: 34%;
+    }
+
     .data-visualization img[alt]:after {  
         width: 150px;
         height: 150px;
+        text-align: center;
     }
     
 }
 
+.data-visualization .weather {
+    display: none;
+}
 
 .data-visualization img[alt]:after {  
     display: flex;

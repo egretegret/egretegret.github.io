@@ -1,19 +1,20 @@
 import React from 'react';
-import DataImg from '../DataImg';
 
 function FridayData(props) {
 
     return (
         <div className="data" id="friday-data">
-            <DataImg reveal={props.reveal} hide={props.hide} className="friday-outfit" id="greencardigan" src="./data-visualization/greencardigan.png" alt="green cropped cardigan" />
-            <DataImg reveal={props.reveal} hide={props.hide} className="friday-outfit" id="whiteskirt" src="./data-visualization/whiteskirt.png" alt="lace detail white skirt" />
-            <DataImg reveal={props.reveal} hide={props.hide} className="friday-outfit" id="whitesocks" src="./data-visualization/whitesocks.png" alt="knee high white socks with ribbons" />
-            <DataImg reveal={props.reveal} hide={props.hide} className="friday-outfit" id="whitesneakers" src="./data-visualization/whitesneakers.png" alt="white platform naked wolfe sneakers" />
-            <DataImg reveal={props.reveal} hide={props.hide} className="friday-outfit" id="clearbelt" src="./data-visualization/clearbelt.png" alt="clear and gold heart belt" />
-            <DataImg reveal={props.reveal} hide={props.hide} className="friday-outfit" id="cardigan" src="./data-visualization/cardigan.png" alt="white oversized knitted cardigan" />
-            <DataImg reveal={props.reveal} hide={props.hide} className="friday-outfit" id="goldnecklace" src="./data-visualization/goldnecklace.png" alt="gold butterfly necklace" />
-            <DataImg reveal={props.reveal} hide={props.hide} className="friday-outfit" id="heartearrings" src="./data-visualization/heartearrings.png" alt="golden heart earrings" />
-        
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="friday-outfit" id="greencardigan" src="./data-visualization/greencardigan.png" alt="green cropped cardigan" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="friday-outfit" id="whiteskirt" src="./data-visualization/whiteskirt.png" alt="lace detail white skirt" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="friday-outfit" id="whitesocks" src="./data-visualization/whitesocks.png" alt="knee high white socks with ribbons" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="friday-outfit" id="whitesneakers" src="./data-visualization/whitesneakers.png" alt="white platform naked wolfe sneakers" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="friday-outfit" id="clearbelt" src="./data-visualization/clearbelt.png" alt="clear and gold heart belt" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="friday-outfit" id="cardigan" src="./data-visualization/cardigan.png" alt="white oversized knitted cardigan" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="friday-outfit" id="goldnecklace" src="./data-visualization/goldnecklace.png" alt="gold butterfly necklace" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="friday-outfit" id="heartearrings" src="./data-visualization/heartearrings.png" alt="golden heart earrings" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="weather" id="rain1" src="./data-visualization/rain.png" alt="low: 43° " />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="weather" id="rain2" src="./data-visualization/rain.png" alt="rainy" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="weather" id="rain3" src="./data-visualization/rain.png" alt="high: 54°" />
         </div>
     )
 
