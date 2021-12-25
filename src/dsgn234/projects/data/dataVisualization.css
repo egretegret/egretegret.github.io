@@ -55,7 +55,7 @@
 }
 
 .data-visualization .time-slider .time-slider-line:hover {
-    opacity: 50%;
+    opacity: .5;
 }
 
 .data-visualization .time-slider .time-slider-day {
