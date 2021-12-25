@@ -41,7 +41,7 @@ function DataVisualization() {
 
     return (
         <div className="data-visualization">
-            <div className="title" onMouseOver={reset}>outfits<br/>of<br/>the<br/>week</div>
+            <div className="title" onMouseOver={reset}>outfits of the week</div>
             <TimeSlider daySelector={daySelector.bind(this)} day={day}/>
             <SundayData />
             <MondayData />

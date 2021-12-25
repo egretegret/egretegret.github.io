@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 function SundayData() {
 
+    
+
     return (
         <div className="data" id="sunday-data">
             <img className="sunday-outfit" id="docs" src="./data-visualization/docs.png" alt="doc marten boots" />

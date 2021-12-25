@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    cursor: url("http://localhost:3000/egg1.png"), auto;
+    cursor: url("http://egretegret.github.io/egg1.png"), auto;
 }
 
 .data-visualization .title {
@@ -60,100 +60,329 @@
     /* display: none; */
 }
 
-.data-visualization img {
-    position: absolute;
-    max-width: 150px;
-    max-height: 200px;
+@media screen and (min-width: 3000px) and (min-height: 3000px) {
+    .data-visualization img {
+        position: absolute;
+        max-width: 150px;
+        max-height: 150px;
+    }
+  }
+
+@media screen and (max-width: 2999px) and (max-height: 2999px) {
+    .data-visualization img {
+        position: absolute;
+        max-width: 100px;
+        max-height: 100px;
+    }
 }
 
 .data-visualization #docs {
-    left: 1vw;
-    bottom: 5vh;
+    left: 3%;
+    bottom: 5%;
 }
 
 .data-visualization #blackjeans {
-    right: 15vw;
-    bottom: 10vh;
+    right: 12%;
+    bottom: 10%;
 }
 
 .data-visualization #turtleneck {
-    left: 7vw;
-    top: 20vh;
+    left: 7%;
+    top: 20%;
 }
 
 .data-visualization #coat {
-    right: 2vw;
-    top: 5vh;
+    right: 2%;
+    top: 5%;
+}
+
+.data-visualization #hoops {
+    left: 35%;
+    top: 60%;
 }
 
 .data-visualization #blackskirt {
-    left: 25vw;
-    bottom: 20vh;
+    left: 25%;
+    bottom: 20%;
 }
 
 .data-visualization #blackturtleneck {
-    right: 9vw;
-    top: 29vh;
+    right: 9%;
+    top: 29%;
 }
 
 .data-visualization #blacksocks {
-    top: 2vh;
-    left: 35vw;
+    top: 2%;
+    left: 35%;
 }
 
 .data-visualization #cardigan {
-    top: 5vh;
-    right: 45vw;
+    top: 6%;
+    right: 44%;
 }
 
 .data-visualization #silvernecklace {
-    left: 12vw;
-    bottom: 26vh;
+    left: 12%;
+    bottom: 26%;
+}
+
+.data-visualization #silverearrings {
+    right: 12%;
+    bottom: 26%;
 }
 
 .data-visualization #tank {
-    left: 2vw;
-    bottom: 40vh;
+    left: 2%;
+    bottom: 40%;
 }
 
 .data-visualization #browntop {
-    top: 33vh;
-    right: 26vw;
+    top: 37%;
+    right: 26%;
 }
 
 .data-visualization #browncardigan {
-    right: 4vw;
-    bottom: 25vh;
+    right: 4%;
+    bottom: 25%;
 }
 
 .data-visualization #blacklace {
-    left: 2vw;
-    bottom: 19vh;
+    left: 2%;
+    bottom: 19%;
 }
 
 .data-visualization #greenjacket {
-    left: 20vw;
-    top: 26vh;
+    left: 20%;
+    top: 26%;
 }
 
 .data-visualization #whitesocks {
     left: 50%;
-    bottom: 5vh;
+    bottom: 5%;
 }
 
 .data-visualization #brownbelt {
     left: 35%;
-    bottom: 2vh;
+    bottom: 2%;
 }
+
 .data-visualization #thinbrownbelt {
     right: 24%;
     bottom: 30%;
 }
+
 .data-visualization #headband {
     left: 5%;
     top: 2%;
 }
+
 .data-visualization #creamskirt {
-    left: 12vw;
+    left: 12%;
     bottom: 10%;
 }
+
+.data-visualization #browntights {
+    right: 39%;
+    top: 33%;
+}
+
+.data-visualization #silverbelt {
+    left: 55%;
+    bottom: 73%;
+}
+
+.data-visualization #tantank {
+    left: 5%;
+    bottom: 57%;
+}
+
+.data-visualization #tancardigan {
+    left: 23%;
+    bottom: 77%;
+}
+
+.data-visualization #tanskirt {
+    left: 39%;
+    bottom: 16%;
+}
+
+.data-visualization #whiteshoes {
+    left: 55%;
+    bottom: 35%;
+}
+
+.data-visualization #warmtights {
+    right: 12%;
+    top: 15%;
+}
+
+.data-visualization #anklewarmers {
+    right: 9%;
+    top: 45%;
+}
+
+.data-visualization #wristwarmers {
+    left: 33%;
+    bottom: 66%;
+}
+
+.data-visualization #whitewristwarmers {
+    right: 24%;
+    bottom: 14%;
+}
+
+.data-visualization #pearlbelt {
+    left: 38%;
+    bottom: 52%;
+}
+
+.data-visualization #kawaii {
+    left: 44%;
+    bottom: 66%;
+}
+
+.data-visualization #sleeveless {
+    right: 2%;
+    bottom: 2%;
+}
+
+.data-visualization #miniskirt {
+    right: 25%;
+    bottom: 86%;
+}
+
+.data-visualization #blacktights {
+    right: 19%;
+    top: 48%;
+}
+
+.data-visualization #blacksocks2 {
+    left: 14%;
+    top: 50%;
+}
+
+.data-visualization #newspaper {
+    right: 24%;
+    top: 22%;
+}
+
+.data-visualization #boots {
+    left: 11%;
+    top: 10%;
+}
+
+.data-visualization #greencardigan {
+    left: 23%;
+    top: 40%;
+}
+
+.data-visualization #whiteskirt {
+    left: 60%;
+    top: 88%;
+}
+
+.data-visualization #whitesneakers {
+    left: 53%;
+    top: 66%;
+}
+
+.data-visualization #clearbelt {
+    left: 26%;
+    top: 54%;
+}
+
+.data-visualization #goldnecklace {
+    left: 20%;
+    top: 1%;
+}
+
+.data-visualization #heartearrings {
+    left: 20%;
+    bottom: 1%;
+}
+
+.data-visualization #blackskirt2 {
+    left: 27%;
+    bottom: 9%;
+}
+
+.data-visualization #cowbag {
+    right: 1%;
+    bottom: 38%;
+}
+
+.data-visualization #goldbelt {
+    right: 46%;
+    bottom: 33%;
+}
+
+.data-visualization #pearlearrings {
+    left: 12%;
+    bottom: 48%;
+}
+
+@media screen and (max-width: 1200px) {
+    .data-visualization img {
+        position: absolute;
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .data-visualization {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .data-visualization .title {
+        font-size: 25px;
+    }
+
+    .data-visualization .time-slider {
+        flex-direction: row;
+        height: 10vh;
+    }
+
+    .data-visualization .time-slider-line {
+        height: 20px!important;
+        width: 15px!important;
+    }
+
+    .data-visualization .time-slider-day {
+        font-size: 40px!important;
+    }
+
+    .data-visualization .data {
+        top: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        max-width: 600px;
+        height: 200vh;
+    }
+
+    .data-visualization #blackjeans {
+        bottom: 40%;
+    }
+
+    .data-visualization #blacksocks {
+        top: 38%;
+    }
+
+    .data-visualization #coat {
+        top: 12%;
+    }
+
+    .data-visualization #silvernecklace {
+        bottom: 33%;
+    }
+
+    .data-visualization #greenjacket {
+        top: 13%;
+    }
+
+    .data-visualization #browntop {
+        right: 3%;
+    }
+}
+
