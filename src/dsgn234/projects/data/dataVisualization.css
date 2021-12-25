@@ -7,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    cursor: url("http://localhost:3000/egg1.png"), auto;
 }
 
 .data-visualization .title {

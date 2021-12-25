@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import "./dataVisualization.css";
-import MondayData from './days/MondayData';
 import SundayData from './days/SundayData';
-import TuesdayData from './days/TuesdayData'
+import MondayData from './days/MondayData';
+import TuesdayData from './days/TuesdayData';
+import WednesdayData from './days/WednesdayData';
+import ThursdayData from './days/ThursdayData';
+import FridayData from './days/FridayData';
+import SaturdayData from './days/SaturdayData';
 // import background from "./paper.png";
 import TimeSlider from './TimeSlider';
 
@@ -42,6 +46,10 @@ function DataVisualization() {
             <SundayData />
             <MondayData />
             <TuesdayData />
+            <WednesdayData />
+            <ThursdayData />
+            <FridayData />
+            <SaturdayData />
         </div>
     )
 
