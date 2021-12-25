@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    cursor: url("http://egretegret.github.io/egg1.png"), auto;
+    cursor: url("http://egretegret.github.io/cursor.png"), auto;
 }
 
 .data-visualization .title {
@@ -58,6 +58,10 @@
     width: calc(100% - 500px);
     height: 100%;
     /* display: none; */
+}
+
+.data-visualization img:hover {
+    cursor: url("http://egretegret.github.io/pointer.png"), pointer;
 }
 
 @media screen and (min-width: 3000px) and (min-height: 3000px) {
@@ -384,5 +388,53 @@
     .data-visualization #browntop {
         right: 3%;
     }
+
+    .data-visualization #anklewarmers {
+        top: 37%;
+    }
+
+    .data-visualization #tanskirt {
+        left: 3%;
+    }
+
+    .data-visualization #whiteshoes {
+        left: 9%;
+    }
+
+    .data-visualization #kawaii {
+        bottom: 30%;
+    }
+
+    .data-visualization #silverbelt {
+        bottom: 1%;
+    }
+
+    .data-visualization #miniskirt {
+        bottom: 48%;
+    }
+
+    .data-visualization #blacktights {
+        top: 67%;
+    }
+
+    .data-visualization #cardigan {
+        top: 15%;
+    }
+    
 }
 
+
+.data-visualization img[alt]:after {  
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 2;  
+    text-align: center;
+    content: attr(alt);
+  }

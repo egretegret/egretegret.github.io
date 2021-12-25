@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function MondayData() {
 
     return (
-        <div class="data" id="monday-data">
+        <div className="data" id="monday-data">
             <img className="monday-outfit" id="blackturtleneck" src="./data-visualization/blackturtleneck.png" alt="black turtleneck" />
             <img className="monday-outfit" id="blackskirt" src="./data-visualization/blackskirt.png" alt="black skirt" />
             <img className="monday-outfit" id="cardigan" src="./data-visualization/cardigan.png" alt="white cardigan" />

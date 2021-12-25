@@ -4,7 +4,7 @@ function TimeSlider(props) {
 
     return (
         <div className="time-slider">
-            <div onMouseOver={props.daySelector} class="time-slider-line" id="sunday"></div>
+            <div onMouseOver={props.daySelector} className="time-slider-line" id="sunday"></div>
             <div onMouseOver={props.daySelector} className="time-slider-line" id="monday"></div>
             <div onMouseOver={props.daySelector} className="time-slider-line" id="tuesday"></div>
             <div onMouseOver={props.daySelector} className="time-slider-line" id="wednesday"></div>

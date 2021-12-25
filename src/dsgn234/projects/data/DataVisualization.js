@@ -39,11 +39,24 @@ function DataVisualization() {
         }
     }
 
+    let name = "";
+
+    const reveal = (e) => {
+        console.log(e.target.src);
+        name = e.target.src;
+        e.target.src = "";
+    }
+
+    const hide = (e) => {
+        e.target.src = name;
+    }
+
+
     return (
         <div className="data-visualization">
             <div className="title" onMouseOver={reset}>outfits of the week</div>
             <TimeSlider daySelector={daySelector.bind(this)} day={day}/>
-            <SundayData />
+            <SundayData reveal={reveal.bind(this)} hide={hide.bind(this)} name={name}/>
             <MondayData />
             <TuesdayData />
             <WednesdayData />
