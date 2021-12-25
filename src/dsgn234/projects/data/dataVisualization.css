@@ -23,6 +23,10 @@
     flex-direction: column;
 }
 
+.data-visualization .title:hover {
+    color: #616161;
+}
+
 .data-visualization .toggle-button {
     width: 100%;
     border: none;
