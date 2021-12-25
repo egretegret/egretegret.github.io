@@ -35,7 +35,7 @@ function DataExercise() {
         (svg) => {
             const height = 450 - margin.top - margin.bottom;
         const width = 1000 - margin.left - margin.right;
-        const viewbox = [0, 0, width, height];
+        // const viewbox = [0, 0, width, height];
 
     // // set up the x scale to match how many elements we have in our object
     const x = d3

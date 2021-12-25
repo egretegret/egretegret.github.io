@@ -1,10 +1,9 @@
 import React from 'react';
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import About from './About';
 import Home from './Home';
 import Design from './Design'
 import Dsgn234 from './Dsgn234'
-import HoverActivity from './dsgn234/exercises/HoverActivity'
 import './styles/App.css';
 
 class App extends React.Component {

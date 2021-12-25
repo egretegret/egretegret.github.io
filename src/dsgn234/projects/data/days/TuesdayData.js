@@ -19,9 +19,12 @@ function TuesdayData(props) {
             <img onMouseOver={props.reveal} onMouseOut={props.hide} className="tuesday-outfit" id="silverbelt" src="./data-visualization/silverbelt.png" alt="silver chains with a heart" />
             <img onMouseOver={props.reveal} onMouseOut={props.hide} className="tuesday-outfit" id="docs" src="./data-visualization/docs.png" alt="black doc marten boots" />
             <img onMouseOver={props.reveal} onMouseOut={props.hide} className="tuesday-outfit" id="silverearrings" src="./data-visualization/silverheartearrings.png" alt="silver heart earrings" />
-            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="weather" id="cloud1" src="./data-visualization/cloud.png" alt="cloudy" />
-            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="weather" id="cloud2" src="./data-visualization/cloud.png" alt="low: 30°" />
-            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="weather" id="cloud3" src="./data-visualization/cloud.png" alt="high: 45°" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="doodles" id="cloud1" src="./data-visualization/cloud.png" alt="cloudy" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="doodles" id="cloud2" src="./data-visualization/cloud.png" alt="low: 30°" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="doodles" id="cloud3" src="./data-visualization/cloud.png" alt="high: 45°" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="doodles" id="sad1" src="./data-visualization/sad.png" alt="kind of stressed" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="doodles" id="sad2" src="./data-visualization/sad.png" alt="lots of hw due tonight" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="doodles" id="sad3" src="./data-visualization/sad.png" alt="oh god why didn't i work sooner" />
         </div>
     )
 

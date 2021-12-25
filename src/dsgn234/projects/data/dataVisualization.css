@@ -407,6 +407,51 @@
     top: 33%;
 }
 
+.data-visualization #happy1 {
+    left: 83%;
+    top: 16%;
+}
+
+.data-visualization #happy2 {
+    left: 3%;
+    top: 33%;
+}
+
+.data-visualization #happy3 {
+    left: 23%;
+    top: 63%;
+}
+
+.data-visualization #neutral1 {
+    left: 83%;
+    top: 17%;
+}
+
+.data-visualization #neutral2 {
+    left: 3%;
+    top: 48%;
+}
+
+.data-visualization #neutral3 {
+    left: 70%;
+    top: 73%;
+}
+
+.data-visualization #sad1 {
+    left: 1%;
+    top: 17%;
+}
+
+.data-visualization #sad2 {
+    left: 33%;
+    top: 58%;
+}
+
+.data-visualization #sad3 {
+    left: 80%;
+    top: 33%;
+}
+
 @media screen and (max-width: 1200px) {
 
     .data-visualization {
@@ -580,6 +625,18 @@
         left: 34%;
     }
 
+    .data-visualization #sad2 {
+        top: 68%;
+    }
+
+    .data-visualization #sad3 {
+        top: 23%;
+    }
+
+    .data-visualization #happy3 {
+        left: 12%;
+    }
+
     .data-visualization img[alt]:after {  
         width: 150px;
         height: 150px;
@@ -588,7 +645,7 @@
     
 }
 
-.data-visualization .weather {
+.data-visualization .doodles {
     display: none;
 }
 

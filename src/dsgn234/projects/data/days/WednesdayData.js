@@ -16,9 +16,12 @@ function WednesdayData(props) {
             <img onMouseOver={props.reveal} onMouseOut={props.hide} className="wednesday-outfit" id="silverbelt" src="./data-visualization/silverbelt.png" alt="silver chains with heart" />
             <img onMouseOver={props.reveal} onMouseOut={props.hide} className="wednesday-outfit" id="kawaii" src="./data-visualization/kawaiinecklace.png" alt="cute kuromi silver necklace" />
             <img onMouseOver={props.reveal} onMouseOut={props.hide} className="wednesday-outfit" id="silverearrings" src="./data-visualization/silverheartearrings.png" alt="silver heart earrings" />
-            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="weather" id="rain1" src="./data-visualization/rain.png" alt="rainy" />
-            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="weather" id="rain2" src="./data-visualization/rain.png" alt="high: 52°" />
-            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="weather" id="rain3" src="./data-visualization/rain.png" alt="low: 36°"/>
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="doodles" id="rain1" src="./data-visualization/rain.png" alt="rainy" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="doodles" id="rain2" src="./data-visualization/rain.png" alt="high: 52°" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="doodles" id="rain3" src="./data-visualization/rain.png" alt="low: 36°"/>
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="doodles" id="sad1" src="./data-visualization/sad.png" alt="omg crunch time" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="doodles" id="sad2" src="./data-visualization/sad.png" alt="are we going to even finish" />
+            <img onMouseOver={props.reveal} onMouseOut={props.hide} className="doodles" id="sad3" src="./data-visualization/sad.png" alt="help" />
         </div>
     )
 

@@ -1,12 +1,4 @@
 import React, { useState } from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useParams,
-    useRouteMatch
-} from "react-router-dom";
 import "./explainer.css";
 import background from "./paper.png";
 

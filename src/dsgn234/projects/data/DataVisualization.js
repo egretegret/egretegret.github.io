@@ -12,13 +12,16 @@ import TimeSlider from "./TimeSlider";
 
 function DataVisualization() {
 
+    document.title = "Data Visualization";
+
     const [day, setDay] = useState("");
+    var i = 0;
 
     const daySelector = (e) => {
         setDay(e.target.id);
 
         var all = document.getElementsByClassName("data");
-        for (var i = 0; i < all.length; i++) {
+        for (i = 0; i < all.length; i++) {
             all[i].style.display = "none";
         }
 
@@ -31,9 +34,9 @@ function DataVisualization() {
         document.getElementById("cover").style.display = "none";
 
         
-        var weather = document.getElementsByClassName("weather");
-        for (var i = 0; i < weather.length; i++) {
-            weather[i].style.display = "block";
+        var doodles = document.getElementsByClassName("doodles");
+        for (i = 0; i < doodles.length; i++) {
+            doodles[i].style.display = "block";
         }
 
     }
@@ -42,16 +45,15 @@ function DataVisualization() {
         setDay("");
 
         var all = document.getElementsByClassName("data");
-        for (var i = 0; i < all.length; i++) {
+        for (i = 0; i < all.length; i++) {
             all[i].style.display = "block";
         }
 
         document.getElementById("cover").style.display = "block";
 
-        var weather = document.getElementsByClassName("weather");
-        console.log(weather);
-        for (var i = 0; i < weather.length; i++) {
-            weather[i].style.display = "none";
+        var doodles = document.getElementsByClassName("doodles");
+        for (i = 0; i < doodles.length; i++) {
+            doodles[i].style.display = "none";
         }
     }
 
