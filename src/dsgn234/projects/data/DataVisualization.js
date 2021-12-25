@@ -58,6 +58,8 @@ function DataVisualization() {
         for (i = 0; i < doodles.length; i++) {
             doodles[i].style.display = "none";
         }
+
+        toggle = false;
     }
 
     let name = "";
