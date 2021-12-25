@@ -16,6 +16,7 @@ function DataVisualization() {
 
     const [day, setDay] = useState("");
     var i = 0;
+    let toggle = false;
 
     const daySelector = (e) => {
         setDay(e.target.id);
@@ -33,10 +34,12 @@ function DataVisualization() {
 
         document.getElementById("cover").style.display = "none";
 
-        
-        var doodles = document.getElementsByClassName("doodles");
-        for (i = 0; i < doodles.length; i++) {
-            doodles[i].style.display = "block";
+        console.log(toggle);
+        if (toggle) {
+            var doodles = document.getElementsByClassName("doodles");
+            for (i = 0; i < doodles.length; i++) {
+                doodles[i].style.display = "block";
+            }
         }
 
     }
@@ -68,12 +71,32 @@ function DataVisualization() {
         e.target.src = name;
     }
 
+    const toggler = () => {
+        toggle = toggle ? false : true;
+
+        if (toggle && day != "") {
+            var doodles = document.getElementsByClassName("doodles");
+            for (i = 0; i < doodles.length; i++) {
+                doodles[i].style.display = "block";
+            }
+        } else {
+            var doodles = document.getElementsByClassName("doodles");
+            for (i = 0; i < doodles.length; i++) {
+                doodles[i].style.display = "none";
+            }
+        }
+
+        console.log(toggle);
+    }
+
 
     return (
         <div className="data-visualization">
-            <div className="title" onMouseOver={reset}>outfits of the week</div>
+            <div className="title" onMouseOver={reset}>
+                outfits of the week
+            </div>
             <div id="cover"></div>
-            <TimeSlider daySelector={daySelector.bind(this)} day={day}/>
+            <TimeSlider daySelector={daySelector.bind(this)} day={day} toggler={toggler.bind(this)}/>
             <SundayData reveal={reveal.bind(this)} hide={hide.bind(this)} name={name}/>
             <MondayData reveal={reveal.bind(this)} hide={hide.bind(this)} name={name}/>
             <TuesdayData reveal={reveal.bind(this)} hide={hide.bind(this)} name={name}/>
