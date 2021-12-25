@@ -48,6 +48,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 84px;
     z-index: 1;
+    max-width: 500px;
 }
 
 .data-visualization .data {
@@ -58,6 +59,16 @@
     width: calc(100% - 500px);
     height: 100%;
     /* display: none; */
+}
+
+.data-visualization #cover {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    right: 250px;
+    width: calc(100% - 500px);
+    height: 100%;
+    z-index: 5;
 }
 
 .data-visualization img:hover {
@@ -375,6 +386,17 @@
         width: 100%;
         max-width: 600px;
         height: 200vh;
+    }
+
+    .data-visualization #cover {
+        top: 52px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        max-width: 600px;
+        height: 200vh;
+        background-color: pink;
     }
 
     .data-visualization #blackjeans {

@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./dataVisualization.css";
-import SundayData from './days/SundayData';
-import MondayData from './days/MondayData';
-import TuesdayData from './days/TuesdayData';
-import WednesdayData from './days/WednesdayData';
-import ThursdayData from './days/ThursdayData';
-import FridayData from './days/FridayData';
-import SaturdayData from './days/SaturdayData';
+import SundayData from "./days/SundayData";
+import MondayData from "./days/MondayData";
+import TuesdayData from "./days/TuesdayData";
+import WednesdayData from "./days/WednesdayData";
+import ThursdayData from "./days/ThursdayData";
+import FridayData from "./days/FridayData";
+import SaturdayData from "./days/SaturdayData";
 // import background from "./paper.png";
-import TimeSlider from './TimeSlider';
+import TimeSlider from "./TimeSlider";
 
 function DataVisualization() {
 
@@ -17,7 +17,7 @@ function DataVisualization() {
     const daySelector = (e) => {
         setDay(e.target.id);
 
-        var all = document.getElementsByClassName('data');
+        var all = document.getElementsByClassName("data");
         for (var i = 0; i < all.length; i++) {
             all[i].style.display = "none";
         }
@@ -28,15 +28,19 @@ function DataVisualization() {
             showElement.style.display = "block";
         }
 
+        document.getElementById("cover").style.display = "none";
+
     }
 
     const reset = () => {
         setDay("");
 
-        var all = document.getElementsByClassName('data');
+        var all = document.getElementsByClassName("data");
         for (var i = 0; i < all.length; i++) {
             all[i].style.display = "block";
         }
+
+        document.getElementById("cover").style.display = "block";
     }
 
     let name = "";
@@ -54,6 +58,7 @@ function DataVisualization() {
     return (
         <div className="data-visualization">
             <div className="title" onMouseOver={reset}>outfits of the week</div>
+            <div id="cover"></div>
             <TimeSlider daySelector={daySelector.bind(this)} day={day}/>
             <SundayData reveal={reveal.bind(this)} hide={hide.bind(this)} name={name}/>
             <MondayData reveal={reveal.bind(this)} hide={hide.bind(this)} name={name}/>
