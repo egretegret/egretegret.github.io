@@ -457,6 +457,8 @@
     .data-visualization {
         width: 100vw;
         height: 220vh;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .data-visualization img {
@@ -465,15 +467,11 @@
         max-height: 150px;
     }
 
-    .data-visualization {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
     .data-visualization .title {
         font-size: 25px;
         padding-top: 20px;
-        padding-bottom: 5px;
+        padding-bottom: 15px;
+        padding-left: 0;
     }
 
     .data-visualization .time-slider {
@@ -487,12 +485,12 @@
     }
 
     .data-visualization .time-slider-day {
-        padding-top: 15px;
+        padding-top: 25px;
         font-size: 40px!important;
     }
 
     .data-visualization .data {
-        top: 20px;
+        top: 110px;
         left: 0;
         right: 0;
         margin: auto;
@@ -502,7 +500,7 @@
     }
 
     .data-visualization #cover {
-        top: 72px;
+        top: 182px;
         left: 0;
         right: 0;
         margin: auto;
