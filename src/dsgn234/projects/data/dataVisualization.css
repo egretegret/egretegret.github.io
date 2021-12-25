@@ -14,7 +14,9 @@
     font-size: 64px;
     text-align: left;
     max-width: 250px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Yuji Syuku', serif;
+    line-height: 1.2;
+    font-weight: 300;
     padding-left: 5px;
 }
 
@@ -34,6 +36,7 @@
     margin-bottom: 30px;
     background-clip: border-box; */
     z-index: 3;
+    background-image: url("http://egretegret.github.io/line.png");
 }
 
 .data-visualization .time-slider .time-slider-line:hover {
@@ -45,7 +48,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    font-family: 'Yuji Syuku', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 84px;
     z-index: 1;
 }
@@ -70,6 +73,11 @@
         max-width: 150px;
         max-height: 150px;
     }
+
+    .data-visualization img[alt]:after {  
+        width: 150px;
+        height: 150px;
+      }
   }
 
 @media screen and (max-width: 2999px) and (max-height: 2999px) {
@@ -78,16 +86,21 @@
         max-width: 100px;
         max-height: 100px;
     }
+
+    .data-visualization img[alt]:after {  
+        width: 100px;
+        height: 100px;
+      }
 }
 
 .data-visualization #docs {
     left: 3%;
-    bottom: 5%;
+    top: 88%;
 }
 
 .data-visualization #blackjeans {
     right: 12%;
-    bottom: 10%;
+    top: 80%;
 }
 
 .data-visualization #turtleneck {
@@ -107,7 +120,7 @@
 
 .data-visualization #blackskirt {
     left: 25%;
-    bottom: 20%;
+    top: 66%;
 }
 
 .data-visualization #blackturtleneck {
@@ -127,17 +140,17 @@
 
 .data-visualization #silvernecklace {
     left: 12%;
-    bottom: 26%;
+    top: 64%;
 }
 
 .data-visualization #silverearrings {
     right: 12%;
-    bottom: 26%;
+    top: 67%;
 }
 
 .data-visualization #tank {
     left: 2%;
-    bottom: 40%;
+    top: 46%;
 }
 
 .data-visualization #browntop {
@@ -147,12 +160,12 @@
 
 .data-visualization #browncardigan {
     right: 4%;
-    bottom: 25%;
+    top: 65%;
 }
 
 .data-visualization #blacklace {
     left: 2%;
-    bottom: 19%;
+    top: 69%;
 }
 
 .data-visualization #greenjacket {
@@ -162,17 +175,17 @@
 
 .data-visualization #whitesocks {
     left: 50%;
-    bottom: 5%;
+    top: 82%;
 }
 
 .data-visualization #brownbelt {
     left: 35%;
-    bottom: 2%;
+    top: 91%;
 }
 
 .data-visualization #thinbrownbelt {
     right: 24%;
-    bottom: 30%;
+    top: 62%;
 }
 
 .data-visualization #headband {
@@ -182,7 +195,7 @@
 
 .data-visualization #creamskirt {
     left: 12%;
-    bottom: 10%;
+    top: 77%;
 }
 
 .data-visualization #browntights {
@@ -192,27 +205,27 @@
 
 .data-visualization #silverbelt {
     left: 55%;
-    bottom: 73%;
+    top: 16%;
 }
 
 .data-visualization #tantank {
     left: 5%;
-    bottom: 57%;
+    top: 33%;
 }
 
 .data-visualization #tancardigan {
     left: 23%;
-    bottom: 77%;
+    top: 12%;
 }
 
 .data-visualization #tanskirt {
     left: 39%;
-    bottom: 16%;
+    top: 71%;
 }
 
 .data-visualization #whiteshoes {
     left: 55%;
-    bottom: 35%;
+    top: 52%;
 }
 
 .data-visualization #warmtights {
@@ -227,32 +240,32 @@
 
 .data-visualization #wristwarmers {
     left: 33%;
-    bottom: 66%;
+    top: 22%;
 }
 
 .data-visualization #whitewristwarmers {
     right: 24%;
-    bottom: 14%;
+    top: 75%;
 }
 
 .data-visualization #pearlbelt {
     left: 38%;
-    bottom: 52%;
+    top: 37%;
 }
 
 .data-visualization #kawaii {
     left: 44%;
-    bottom: 66%;
+    top: 24%;
 }
 
 .data-visualization #sleeveless {
     right: 2%;
-    bottom: 2%;
+    top: 86%;
 }
 
 .data-visualization #miniskirt {
     right: 25%;
-    bottom: 86%;
+    top: 4%;
 }
 
 .data-visualization #blacktights {
@@ -302,27 +315,27 @@
 
 .data-visualization #heartearrings {
     left: 20%;
-    bottom: 1%;
+    top: 88%;
 }
 
 .data-visualization #blackskirt2 {
     left: 27%;
-    bottom: 9%;
+    top: 80%;
 }
 
 .data-visualization #cowbag {
     right: 1%;
-    bottom: 38%;
+    top: 50%;
 }
 
 .data-visualization #goldbelt {
     right: 46%;
-    bottom: 33%;
+    top: 53%;
 }
 
 .data-visualization #pearlearrings {
     left: 12%;
-    bottom: 48%;
+    top: 40%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -339,6 +352,7 @@
 
     .data-visualization .title {
         font-size: 25px;
+        padding-bottom: 5px;
     }
 
     .data-visualization .time-slider {
@@ -352,6 +366,7 @@
     }
 
     .data-visualization .time-slider-day {
+        padding-top: 15px;
         font-size: 40px!important;
     }
 
@@ -366,7 +381,7 @@
     }
 
     .data-visualization #blackjeans {
-        bottom: 40%;
+        top: 40%;
     }
 
     .data-visualization #blacksocks {
@@ -378,7 +393,7 @@
     }
 
     .data-visualization #silvernecklace {
-        bottom: 33%;
+        top: 37%;
     }
 
     .data-visualization #greenjacket {
@@ -402,15 +417,28 @@
     }
 
     .data-visualization #kawaii {
-        bottom: 30%;
+        top: 40%;
+    }
+
+    .data-visualization #pearlbelt {
+        top: 55%;
     }
 
     .data-visualization #silverbelt {
-        bottom: 1%;
+        top: 55%;
     }
 
     .data-visualization #miniskirt {
-        bottom: 48%;
+        top: 78%;
+    }
+
+    .data-visualization #wristwarmers {
+        top: 30%;
+        left: 24%;
+    }
+
+    .data-visualization #silverearrings {
+        left: 19%;
     }
 
     .data-visualization #blacktights {
@@ -420,21 +448,25 @@
     .data-visualization #cardigan {
         top: 15%;
     }
+
+    .data-visualization img[alt]:after {  
+        width: 150px;
+        height: 150px;
+    }
     
 }
 
 
 .data-visualization img[alt]:after {  
-    display: block;
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
+    background-color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    line-height: 2;  
+    line-height: 1.5;  
     text-align: center;
     content: attr(alt);
   }
