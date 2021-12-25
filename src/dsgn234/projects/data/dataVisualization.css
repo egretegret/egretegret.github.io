@@ -8,6 +8,7 @@
     align-items: center;
     position: relative;
     cursor: url("http://egretegret.github.io/data-visualization/cursor.png"), auto;
+    background-color: #e6e1d9;
 }
 
 .data-visualization .title {
@@ -347,6 +348,12 @@
 }
 
 @media screen and (max-width: 1200px) {
+
+    .data-visualization {
+        width: 100vw;
+        height: 220vh;
+    }
+
     .data-visualization img {
         position: absolute;
         max-width: 150px;
@@ -360,6 +367,7 @@
 
     .data-visualization .title {
         font-size: 25px;
+        padding-top: 20px;
         padding-bottom: 5px;
     }
 
@@ -389,14 +397,13 @@
     }
 
     .data-visualization #cover {
-        top: 52px;
+        top: 72px;
         left: 0;
         right: 0;
         margin: auto;
         width: 100%;
         max-width: 600px;
         height: 200vh;
-        background-color: pink;
     }
 
     .data-visualization #blackjeans {
@@ -482,7 +489,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: #e6e1d9;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     line-height: 1.5;  
