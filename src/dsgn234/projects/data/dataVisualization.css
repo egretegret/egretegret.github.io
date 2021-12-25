@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    cursor: url("http://egretegret.github.io/cursor.png"), auto;
+    cursor: url("http://egretegret.github.io/data-visualization/cursor.png"), auto;
 }
 
 .data-visualization .title {
@@ -31,16 +31,13 @@
 .data-visualization .time-slider .time-slider-line {
     height: 10px;
     width: 100%;
-    background-color: black;
-    /* margin-top: 30px;
-    margin-bottom: 30px;
-    background-clip: border-box; */
     z-index: 3;
-    background-image: url("http://egretegret.github.io/line.png");
+    background-image: url("http://egretegret.github.io/data-visualization/line.png");
+    background-size: cover;
 }
 
 .data-visualization .time-slider .time-slider-line:hover {
-    background-color: grey;
+    opacity: 50%;
 }
 
 .data-visualization .time-slider .time-slider-day {
@@ -64,7 +61,7 @@
 }
 
 .data-visualization img:hover {
-    cursor: url("http://egretegret.github.io/pointer.png"), pointer;
+    cursor: url("http://egretegret.github.io/data-visualization/pointer.png"), pointer;
 }
 
 @media screen and (min-width: 3000px) and (min-height: 3000px) {
