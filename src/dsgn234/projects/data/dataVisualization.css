@@ -596,12 +596,13 @@
     }
 
     .data-visualization #cloud2 {
-        left: 88%;
+        left: 58%;
         top: 88%;
     }
 
     .data-visualization #cloud3 {
         top: 47%;
+        left: 61%;
     }
 
     .data-visualization #rain1 {
@@ -610,17 +611,31 @@
     }
     
     .data-visualization #rain2 {
-        left: 75%;
+        left: 60%;
         top: 50%;
     }
     
     .data-visualization #rain3 {
         top: 75%;
+        left: 54%;
     }
 
     .data-visualization #sun2 {
         top: 12%;
         left: 34%;
+    }
+
+    .data-visualization #sun3 {
+        left: 65%;
+    }
+
+    .data-visualization #neutral1 {
+        top: 21%;
+        left: 63%;
+    }
+
+    .data-visualization #neutral3 {
+        left: 63%;
     }
 
     .data-visualization #sad2 {
@@ -629,6 +644,10 @@
 
     .data-visualization #sad3 {
         top: 23%;
+    }
+
+    .data-visualization #happy1 {
+        left: 60%;
     }
 
     .data-visualization #happy3 {
